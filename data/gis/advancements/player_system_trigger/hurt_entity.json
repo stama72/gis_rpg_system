@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement_1": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [],
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "minecraft:player"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "gis:system/advancement/player_system_trigger/hurt_entity"
+  }
+}
