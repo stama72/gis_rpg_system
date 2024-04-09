@@ -2,15 +2,14 @@
 
 
 
-左右の平行移動、左右の回転には、ひとつのfunctionで全部対応しておきたいところです。
+左右の平行移動、左右の回転には、ひとつのfunctionで全部対応しておきたい。
 
 functionは
 is_right
 is_left
 is_upper
 is_lower
-の4つだけにしましょう。
+の4つだけにする。
 
 
-
-
+/execute as @e[tag=cd_test1] run function gis:system/util/collision_detection/r_l/is_right_r_shift {"attacker":"3a078e4b-4bd2-4830-976c-28e31f863b5e","shift":"0"}
