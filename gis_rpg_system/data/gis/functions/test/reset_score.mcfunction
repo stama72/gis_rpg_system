@@ -7,6 +7,9 @@
 
 
 scoreboard players reset @a gis_player_health
+scoreboard players reset @a gis_cooltime
+scoreboard players reset @a gis_job
+
 
 
 
