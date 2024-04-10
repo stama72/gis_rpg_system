@@ -3,15 +3,9 @@
     "requirement": {
       "trigger": "minecraft:using_item",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": "minecraft:shield",
-              "count": 1
-            }
-          }
-        ]
+        "item": {
+          "items": "minecraft:shield"
+        }
       }
     }
   },

@@ -11,11 +11,14 @@ scoreboard objectives add gis_player_status_def dummy "def"
 scoreboard objectives add gis_player_status_matk dummy "matk"
 scoreboard objectives add gis_player_status_mdef dummy "mdef"
 
-scoreboard objectives add gis_cooltime dummy "ct"
+scoreboard objectives add gis_cooltime dummy "skill cooltime"
 scoreboard objectives setdisplay sidebar gis_cooltime
 
+#skill
 scoreboard objectives add gis_skill_using dummy "skills being used or prepared"
 scoreboard objectives add gis_skill_using_count dummy "time spent using or preparing skills"
+scoreboard objectives add gis_skill_using_count_sub dummy "copy of gis_skill_using_count"
+
 
 scoreboard objectives add gis_skill_main_1 dummy "skill slot main weapon 1"
 scoreboard objectives add gis_skill_main_2 dummy "skill slot main weapon 2"
@@ -31,6 +34,8 @@ scoreboard objectives add gis_job dummy "job"
 scoreboard objectives add gis_damage dummy
 scoreboard objectives add gis_health dummy
 scoreboard objectives add gis_const dummy
+scoreboard objectives add gis_player_leave_game minecraft.custom:minecraft.leave_game
+
 
 #system_temp
 scoreboard objectives add gis_temp_1 dummy
@@ -48,6 +53,7 @@ scoreboard players set #5 gis_const 5
 scoreboard players set #10 gis_const 10
 scoreboard players set #20 gis_const 20
 scoreboard players set #100 gis_const 100
+scoreboard players set #1000 gis_const 1000
 
 ##create team
 team add gis_entity_hp_0

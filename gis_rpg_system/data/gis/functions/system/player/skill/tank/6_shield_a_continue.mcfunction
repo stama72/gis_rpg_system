@@ -3,9 +3,12 @@
 scoreboard players add @s gis_skill_using_count 1
 
 
-#周囲4mに耐性2
-execute at @s as @a[distance=..4] run effect give @s resistance 5 1 true
-execute at @s as @a[distance=..4] run playsound block.enchantment_table.use master @s ~ ~ ~ 1 1
+scoreboard players operation @s gis_temp_1 = @s gis_skill_using_count
+scoreboard players operation @s gis_temp_1 %= #20 gis_const
 
-execute at @s run particle dust 0.322 0.58 0.969 1 ~-1 ~ ~-1 ~1 ~ ~1 0 100 normal @a
+#周囲4mに耐性2
+execute at @s as @a[distance=..4] run effect give @s resistance 5 1 false
+execute if score @s gis_temp_1 matches 0 at @s run playsound block.enchantment_table.use master @a ~ ~ ~ 1 1
+
+execute at @s run particle dust 0.322 0.58 0.969 1 ~ ~ ~ 2 0.6 2 10 20 normal @a
 
