@@ -13,6 +13,9 @@ scoreboard objectives add gis_player_status_mdef dummy "mdef"
 
 scoreboard objectives add gis_cooltime dummy "ct"
 
+scoreboard objectives add gis_skill_using dummy "skills being used or prepared"
+scoreboard objectives add gis_skill_using_count dummy "time spent using or preparing skills"
+
 scoreboard objectives add gis_skill_main_1 dummy "skill slot main weapon 1"
 scoreboard objectives add gis_skill_main_2 dummy "skill slot main weapon 2"
 scoreboard objectives add gis_skill_sub_1 dummy "skill slot sub weapon 1"
