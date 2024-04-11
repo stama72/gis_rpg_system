@@ -10,6 +10,7 @@
 #両地点の距離(1000倍)
 scoreboard players set #get_distance gis_temp_1 0
 
+#始点のマーカー
 execute at @s run summon marker ~ ~ ~ {UUID:[I;90,0,1,1]}
 
 execute at 0000005a-0000-0000-0000-000100000001 as 0000005a-0000-0000-0000-000100000002 as @s[distance=128..] run scoreboard players add #get_distance gis_temp_1 128000
@@ -43,6 +44,6 @@ execute at 0000005a-0000-0000-0000-000100000001 as 0000005a-0000-0000-0000-00010
 
 kill 0000005a-0000-0000-0000-000100000001
 
-tellraw @a {"score":{"name":"#get_distance","objective":"gis_temp_1"}}
+tellraw @a [{"text":"distance："},{"score":{"name":"#get_distance","objective":"gis_temp_1"}}]
 #get_distance gis_temp_1
 return run scoreboard players get #get_distance gis_temp_1

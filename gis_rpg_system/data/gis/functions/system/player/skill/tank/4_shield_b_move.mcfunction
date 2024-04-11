@@ -17,8 +17,8 @@ scoreboard players operation #skill_tank4_e_z gis_temp_1 *= #1000 gis_const
 scoreboard players operation #skill_tank4_e_x gis_temp_1 /= #get_distance gis_temp_1
 scoreboard players operation #skill_tank4_e_y gis_temp_1 /= #get_distance gis_temp_1
 scoreboard players operation #skill_tank4_e_z gis_temp_1 /= #get_distance gis_temp_1
-
-scoreboard players add #skill_tank4_e_y gis_temp_1 100
+#上方向に飛ばす
+execute if score #skill_tank4_e_y gis_temp_1 matches ..500 run scoreboard players set #skill_tank4_e_y gis_temp_1 500
 
 #motionに代入
 execute store result entity @s Motion.[0] double 0.001 run scoreboard players get #skill_tank4_e_x gis_temp_1
