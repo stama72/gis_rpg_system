@@ -44,6 +44,6 @@ execute at 0000005a-0000-0000-0000-000100000001 as 0000005a-0000-0000-0000-00010
 
 kill 0000005a-0000-0000-0000-000100000001
 
-tellraw @a [{"text":"distance："},{"score":{"name":"#get_distance","objective":"gis_temp_1"}}]
+#tellraw @a [{"text":"distance："},{"score":{"name":"#get_distance","objective":"gis_temp_1"}}]
 #get_distance gis_temp_1
 return run scoreboard players get #get_distance gis_temp_1

@@ -19,7 +19,6 @@ scoreboard objectives add gis_skill_using dummy "skills being used or prepared"
 scoreboard objectives add gis_skill_using_count dummy "time spent using or preparing skills"
 scoreboard objectives add gis_skill_using_count_sub dummy "copy of gis_skill_using_count"
 
-
 scoreboard objectives add gis_skill_main_1 dummy "skill slot main weapon 1"
 scoreboard objectives add gis_skill_main_2 dummy "skill slot main weapon 2"
 scoreboard objectives add gis_skill_sub_1 dummy "skill slot sub weapon 1"
@@ -28,6 +27,12 @@ scoreboard objectives add gis_skill_other dummy "skill slot other"
 
 #job 0:unset 1:tank 2:attacker 3:hunter 4:magician 5:shaman
 scoreboard objectives add gis_job dummy "job"
+
+#item
+scoreboard objectives add gis_throw_trident minecraft.used:minecraft.trident "throw trident"
+scoreboard objectives add gis_trident_using_count dummy "time spent holding up trident"
+scoreboard objectives add gis_trident_using_count_sub dummy "copy of gis_trident_using_count"
+scoreboard objectives add gis_shoot_arrow minecraft.used:minecraft.bow "shoot arrow"
 
 
 #system_global

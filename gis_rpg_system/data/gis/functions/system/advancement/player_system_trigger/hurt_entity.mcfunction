@@ -1,6 +1,8 @@
 #tag_set
 tag @s add gis_player_attacker_check
 
+
+
 #element tag set
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{element:{fire:1b}}] run tag @s add gis_player_attacker_by_fire_element
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{element:{water:1b}}] run tag @s add gis_player_attacker_by_water_element

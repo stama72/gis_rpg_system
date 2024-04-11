@@ -1,10 +1,7 @@
 #ハードディフェンス
+scoreboard players set @s gis_cooltime -1
 
-
-scoreboard players set @s gis_cooltime 600
-
-#20秒、耐性3、防御上昇1を付与
-
-tellraw @s "ハードディフェンス！"
-effect give @s resistance 20 2 false
-execute at @s run playsound block.enchantment_table.use master @s ~ ~ ~ 1 1
+scoreboard players set @s gis_skill_using 2
+scoreboard players set @s gis_skill_using_count 1
+tellraw @s "ready for ハードディフェンス..."
+execute at @s run playsound minecraft:entity.evoker.prepare_summon master @a ~ ~ ~ 1 1
