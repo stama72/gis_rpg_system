@@ -11,6 +11,8 @@ execute if score @s gis_skill_using_count matches 1.. run scoreboard players ope
 
 #アイテム使用検知
 execute if score @s gis_throw_trident matches 1.. run function gis:system/advancement/player_system_trigger/throw_trident
+execute if score @s gis_shoot_arrow matches 1.. run function gis:system/advancement/player_system_trigger/shoot_arrow
+
 #トライデントの構えをやめた時を判定
 execute if score @s gis_trident_using_count matches 1.. if score @s gis_trident_using_count = @s gis_trident_using_count_sub run scoreboard players set @s gis_trident_using_count 0
 execute if score @s gis_trident_using_count matches 1.. run scoreboard players operation @s gis_trident_using_count_sub = @s gis_trident_using_count

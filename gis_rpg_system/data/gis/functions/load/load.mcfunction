@@ -30,7 +30,7 @@ scoreboard objectives add gis_job dummy "job"
 
 #item
 scoreboard objectives add gis_throw_trident minecraft.used:minecraft.trident "throw trident"
-scoreboard objectives add gis_trident_using_count dummy "time spent holding up trident"
+scoreboard objectives add gis_trident_using_count dummy "time spent holding up a trident"
 scoreboard objectives add gis_trident_using_count_sub dummy "copy of gis_trident_using_count"
 scoreboard objectives add gis_shoot_arrow minecraft.used:minecraft.bow "shoot arrow"
 
