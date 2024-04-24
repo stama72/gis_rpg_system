@@ -1,14 +1,10 @@
 
+#座標調整
 scoreboard players operation #bow_skill_1_x gis_temp_2 = #bow_skill_1_x gis_temp_1
-execute store result score #bow_skill_1_x gis_temp_3 run random value -25000..25000
-scoreboard players operation #bow_skill_1_x gis_temp_2 += #bow_skill_1_x gis_temp_3
 scoreboard players operation #bow_skill_1_y gis_temp_2 = #bow_skill_1_y gis_temp_1
-execute store result score #bow_skill_1_y gis_temp_3 run random value -25000..25000
-scoreboard players operation #bow_skill_1_y gis_temp_2 += #bow_skill_1_y gis_temp_3
 scoreboard players operation #bow_skill_1_z gis_temp_2 = #bow_skill_1_z gis_temp_1
-execute store result score #bow_skill_1_z gis_temp_3 run random value -25000..25000
-scoreboard players operation #bow_skill_1_z gis_temp_2 += #bow_skill_1_z gis_temp_3
-
+execute unless entity @s[tag=arrow_skill_1_rain_shot_sp] run function gis:system/player/skill/hunter/1_bow_b_shot_sub3
+#各種NBT代入
 execute store result entity @s Pos[0] double 0.0001 run scoreboard players get #bow_skill_1_x gis_temp_2
 execute store result entity @s Pos[1] double 0.0001 run scoreboard players get #bow_skill_1_y gis_temp_2
 execute store result entity @s Pos[2] double 0.0001 run scoreboard players get #bow_skill_1_z gis_temp_2

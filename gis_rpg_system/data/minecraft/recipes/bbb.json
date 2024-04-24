@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "bab",
+      "bbb",
+      "   "
+    ],
+    "key": {
+      "a": {
+        "tag": "minecraft:wool"
+      },
+      "b": {
+        "item": "minecraft:glass_pane"
+      }
+    },
+    "result": {
+      "id": "minecraft:blue_wool",
+      "count": 1,
+      "components": {
+        "minecraft:custom_name": "aaa"
+      }
+    }
+  }
+  
