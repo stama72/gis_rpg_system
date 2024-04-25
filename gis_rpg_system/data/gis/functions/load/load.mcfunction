@@ -23,7 +23,6 @@ scoreboard objectives add gis_skill_main_1 dummy "skill slot main weapon 1"
 scoreboard objectives add gis_skill_main_2 dummy "skill slot main weapon 2"
 scoreboard objectives add gis_skill_sub_1 dummy "skill slot sub weapon 1"
 scoreboard objectives add gis_skill_sub_2 dummy "skill slot sub weapon 2"
-scoreboard objectives add gis_skill_other dummy "skill slot other"
 
 #job 0:unset 1:tank 2:attacker 3:hunter 4:magician 5:shaman
 scoreboard objectives add gis_job dummy "job"
@@ -55,6 +54,10 @@ scoreboard players set #2 gis_const 2
 scoreboard players set #3 gis_const 3
 scoreboard players set #4 gis_const 4
 scoreboard players set #5 gis_const 5
+scoreboard players set #6 gis_const 6
+scoreboard players set #7 gis_const 7
+scoreboard players set #8 gis_const 8
+scoreboard players set #9 gis_const 9
 scoreboard players set #10 gis_const 10
 scoreboard players set #20 gis_const 20
 scoreboard players set #100 gis_const 100
