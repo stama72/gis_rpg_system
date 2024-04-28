@@ -21,17 +21,20 @@ scoreboard players operation #skill_tank5_x gis_temp_1 /= #get_distance gis_temp
 scoreboard players operation #skill_tank5_y gis_temp_1 /= #get_distance gis_temp_1
 scoreboard players operation #skill_tank5_z gis_temp_1 /= #get_distance gis_temp_1
 
-execute if score #get_distance gis_temp_1 matches 10000..19999 run scoreboard players operation #skill_tank5_x gis_temp_1 *= #2 gis_const
-execute if score #get_distance gis_temp_1 matches 10000..19999 run scoreboard players operation #skill_tank5_y gis_temp_1 *= #2 gis_const
-execute if score #get_distance gis_temp_1 matches 10000..19999 run scoreboard players operation #skill_tank5_z gis_temp_1 *= #2 gis_const
+execute if score #get_distance gis_temp_1 matches 10000..14999 run scoreboard players operation #skill_tank5_x gis_temp_1 *= #2 gis_const
+execute if score #get_distance gis_temp_1 matches 10000..14999 run scoreboard players operation #skill_tank5_y gis_temp_1 *= #2 gis_const
+execute if score #get_distance gis_temp_1 matches 10000..14999 run scoreboard players operation #skill_tank5_z gis_temp_1 *= #2 gis_const
+
+execute if score #get_distance gis_temp_1 matches 15000..19999 run scoreboard players operation #skill_tank5_x gis_temp_1 *= #3 gis_const
+execute if score #get_distance gis_temp_1 matches 15000..19999 run scoreboard players operation #skill_tank5_y gis_temp_1 *= #3 gis_const
+execute if score #get_distance gis_temp_1 matches 15000..19999 run scoreboard players operation #skill_tank5_z gis_temp_1 *= #3 gis_const
 
 execute if score #get_distance gis_temp_1 matches 20000..29999 run scoreboard players operation #skill_tank5_x gis_temp_1 *= #4 gis_const
-execute if score #get_distance gis_temp_1 matches 20000..29999 run scoreboard players operation #skill_tank5_y gis_temp_1 *= #4 gis_const
+execute if score #get_distance gis_temp_1 matches 20000.. run scoreboard players operation #skill_tank5_y gis_temp_1 *= #4 gis_const
 execute if score #get_distance gis_temp_1 matches 20000.. run scoreboard players add #skill_tank5_y gis_temp_1 100
 execute if score #get_distance gis_temp_1 matches 20000..29999 run scoreboard players operation #skill_tank5_z gis_temp_1 *= #4 gis_const
 
 execute if score #get_distance gis_temp_1 matches 30000..39999 run scoreboard players operation #skill_tank5_x gis_temp_1 *= #6 gis_const
-execute if score #get_distance gis_temp_1 matches 30000..39999 run scoreboard players operation #skill_tank5_y gis_temp_1 *= #6 gis_const
 execute if score #get_distance gis_temp_1 matches 30000.. run scoreboard players add #skill_tank5_y gis_temp_1 100
 execute if score #get_distance gis_temp_1 matches 30000..39999 run scoreboard players operation #skill_tank5_z gis_temp_1 *= #6 gis_const
 
