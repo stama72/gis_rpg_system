@@ -1,10 +1,11 @@
-#アライズ 
-scoreboard players set @s gis_cooltime 150
+#フルブラウン・ディグニティ
+#直進・加速し、貫通する矢。最初は少し遅め。
+scoreboard players set @s gis_cooltime 200
 
-scoreboard players set @s gis_skill_using 5
+scoreboard players set @s gis_skill_using 9
 scoreboard players set @s gis_skill_using_count 1
-tellraw @s "アライズ ！"
-execute at @s run playsound minecraft:entity.firework_rocket.launch master @a ~ ~ ~ 1 0.8
+tellraw @s "フルブラウン・ディグニティ！"
+execute at @s run playsound minecraft:block.beacon.power_select master @a ~ ~ ~ 1 1
 
 #矢に追跡タグを付ける
 execute as @e[type=arrow,limit=1,sort=nearest] run tag @s add shot_arrow_skill_5

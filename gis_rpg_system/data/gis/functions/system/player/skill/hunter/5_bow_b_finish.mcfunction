@@ -7,7 +7,7 @@ execute at @s facing entity @e[type=#enemy,distance=..5,limit=1,sort=nearest] fe
 
 #衝撃波が発生
 execute at @s run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 0.8 1.3
-execute at @s run particle gust_emitter_large ~ ~-0.5 ~ 0 0 0 1 1 normal @a
+execute at @s run particle gust_emitter_small ~ ~-0.5 ~ 0 0 0 1 1 normal @a
 execute at @s as @e[distance=..3,type=#enemy] run damage @s 50 explosion by @p
 
 #距離計測を使いながら、敵をmotionで吹っ飛ばす

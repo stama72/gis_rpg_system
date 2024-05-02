@@ -1,3 +1,5 @@
+
+execute if entity @s[tag=no_mob_convert] run return 0
 #slime
 execute if entity @s[type=#minecraft:slime_type] store result score @s gis_temp_1 run data get entity @s Size 1
 execute if entity @s[type=#minecraft:slime_type] store result entity @s Size long 1 run scoreboard players add @s gis_temp_1 1
