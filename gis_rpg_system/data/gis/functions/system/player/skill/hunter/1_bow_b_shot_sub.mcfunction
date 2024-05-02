@@ -20,8 +20,8 @@ execute at @s run summon arrow ~ ~ ~ {pickup:0b,Owner:[I;0,0,0,0],damage:10d,Pie
 execute store result score #bow_skill_1_x gis_temp_1 run data get entity @s Pos[0] 10000
 execute store result score #bow_skill_1_y gis_temp_1 run data get entity @s Pos[1] 10000
 execute store result score #bow_skill_1_z gis_temp_1 run data get entity @s Pos[2] 10000
-execute at @s as @e[distance=..15,type=#enemy,sort=nearest,limit=1] store result score #bow_skill_1_x gis_temp_1 run data get entity @s Pos[0] 10000
-execute at @s as @e[distance=..15,type=#enemy,sort=nearest,limit=1] store result score #bow_skill_1_z gis_temp_1 run data get entity @s Pos[2] 10000
+execute at @s as @e[distance=..20,type=#enemy,sort=nearest,limit=1] store result score #bow_skill_1_x gis_temp_1 run data get entity @s Pos[0] 10000
+execute at @s as @e[distance=..20,type=#enemy,sort=nearest,limit=1] store result score #bow_skill_1_z gis_temp_1 run data get entity @s Pos[2] 10000
 execute store result storage minecraft:gis_temp skill.hunter_1.owner.0 int 1 run data get entity @s Owner[0]
 execute store result storage minecraft:gis_temp skill.hunter_1.owner.1 int 1 run data get entity @s Owner[1]
 execute store result storage minecraft:gis_temp skill.hunter_1.owner.2 int 1 run data get entity @s Owner[2]
