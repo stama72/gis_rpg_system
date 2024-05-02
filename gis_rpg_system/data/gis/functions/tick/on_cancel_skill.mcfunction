@@ -24,8 +24,11 @@ execute if score @s gis_job matches 3 if score @s gis_skill_using matches 5 if s
 execute if score @s gis_job matches 3 if score @s gis_skill_using matches 5 if score @s gis_skill_using_count matches 11.. if entity @e[type=arrow,tag=arrow_skill_5_rain_shot,nbt={inGround:true}] run function gis:system/player/skill/hunter/5_bow_b_finish
 
 execute if score @s gis_job matches 3 if score @s gis_skill_using matches 9 run scoreboard players add @s gis_skill_using_count 1
-execute if score @s gis_job matches 3 if score @s gis_skill_using matches 9 if score @s gis_skill_using_count matches 5 run function gis:system/player/skill/hunter/9_bow_b_continue
-execute if score @s gis_job matches 3 if score @s gis_skill_using matches 9 if score @s gis_skill_using_count matches 10 if entity @e[type=arrow,tag=arrow_skill_9_shot,nbt={inGround:true}] run function gis:system/player/skill/hunter/9_bow_b_finish
+execute if score @s gis_job matches 3 if score @s gis_skill_using matches 9 if score @s gis_skill_using_count matches 3 run function gis:system/player/skill/hunter/9_bow_b_accelaration
+execute if score @s gis_job matches 3 if score @s gis_skill_using matches 9 if score @s gis_skill_using_count matches 6 run function gis:system/player/skill/hunter/9_bow_b_accelaration
+execute if score @s gis_job matches 3 if score @s gis_skill_using matches 9 if score @s gis_skill_using_count matches 9 run function gis:system/player/skill/hunter/9_bow_b_accelaration
+execute if score @s gis_job matches 3 if score @s gis_skill_using matches 9 if score @s gis_skill_using_count matches 12 run function gis:system/player/skill/hunter/9_bow_b_accelaration
+execute if score @s gis_job matches 3 if score @s gis_skill_using matches 9 if score @s gis_skill_using_count matches 40 if entity @e[type=arrow,tag=arrow_skill_9_shot,nbt={inGround:true}] run kill @s
 
 
 
