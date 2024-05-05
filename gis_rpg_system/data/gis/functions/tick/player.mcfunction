@@ -16,3 +16,6 @@ execute if score @s gis_shoot_arrow matches 1.. run function gis:system/advancem
 #トライデントの構えをやめた時を判定
 execute if score @s gis_trident_using_count matches 1.. if score @s gis_trident_using_count = @s gis_trident_using_count_sub run scoreboard players set @s gis_trident_using_count 0
 execute if score @s gis_trident_using_count matches 1.. run scoreboard players operation @s gis_trident_using_count_sub = @s gis_trident_using_count
+
+#スニーク
+execute if predicate gis:entity_check/is_sneak run function gis:system/advancement/player_system_trigger/on_sneak
