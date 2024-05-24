@@ -60,7 +60,11 @@ scoreboard players set #8 gis_const 8
 scoreboard players set #9 gis_const 9
 scoreboard players set #10 gis_const 10
 scoreboard players set #20 gis_const 20
+scoreboard players set #30 gis_const 30
+scoreboard players set #40 gis_const 40
+scoreboard players set #50 gis_const 50
 scoreboard players set #100 gis_const 100
+scoreboard players set #200 gis_const 200
 scoreboard players set #1000 gis_const 1000
 
 ##create team

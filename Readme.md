@@ -20,4 +20,4 @@ https://docs.google.com/spreadsheets/d/1x2YA6I-pkyaqhWyQVidxWZLpzbHc8oWMAFllHdvJ
 アンデッドかどうかの判定は＃minecraft:inverted_healing_and_harmを使えば良い
 
 
-
+execute if score @s gis_job matches 3 if items entity @s weapon.mainhand *[minecraft:custom_data~{weapon:{dagger:1b}}]
