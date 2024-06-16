@@ -1,6 +1,4 @@
 
-
-
 #プレイヤーが矢の位置にTP
 execute at @e[type=arrow,tag=arrow_skill_5_rain_shot,nbt={inGround:true}] run tp @s ~ ~ ~
 execute at @s facing entity @e[type=#enemy,distance=..5,limit=1,sort=nearest] feet run tp @s ~ ~ ~ ~ ~

@@ -21,7 +21,7 @@
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "gis:system/system_trigger/bow/shoot"
+          "function": "gis:system/system_trigger/bow/shot_arrow"
         }
       }
     ],
@@ -29,17 +29,17 @@
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "gis:system/system_trigger/bow/hit_block"
+          "function": "gis:system/system_trigger/bow/hit_block_arrow"
         }
       }
     ],
     "minecraft:post_attack": [
       {
         "enchanted": "attacker",
-        "affected": "victim",
+        "affected": "damaging_entity",
         "effect": {
           "type": "minecraft:run_function",
-          "function": "gis:system/system_trigger/bow/hit_entity"
+          "function": "gis:system/system_trigger/bow/hit_entity_arrow"
         },
         "requirements": {
           "condition": "minecraft:entity_properties",

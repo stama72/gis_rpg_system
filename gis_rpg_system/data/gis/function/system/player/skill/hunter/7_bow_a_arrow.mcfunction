@@ -6,7 +6,7 @@ execute as @s[nbt={inGround:1b}] run return run function gis:system/player/skill
 
 
 #矢の位置にパーティクルを出す
-execute at @s run particle flame ~ ~ ~ 0 0 0 0.01 1 normal @a
+execute at @s positioned ~ ~0.2 ~ run particle flame ~ ~ ~ 0 0 0 0.01 1 normal @a
 
 #敵にダメージを与える
 execute at @s as @e[type=#enemy,distance=..3,tag=!arrow_skill_7_hit_enemy] run damage @s 50 in_fire by @e[type=arrow,tag=shot_arrow_skill_7,limit=1,sort=nearest]

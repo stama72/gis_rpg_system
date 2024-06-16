@@ -1,8 +1,6 @@
 
-#殴った時、矢を当てた時、トライデントを当てた時などがすべて含まれる。
-#スキル由来のダメージをどうするかが悩みどころ。
-#上記3つのトリガーについてはこのfunctionから通常攻撃の処理を置き換える形でダメージを与え、殴りを伴わない魔法系はそのままスキルのfunctionでダメージを与えるようにするか。
-#とはいえ、まずはスキルそのものの実装を優先し、ダメージ処理の実装は一旦後回しにする。
+
+#まずはスキルそのものの実装を優先し、ダメージ処理の実装は一旦後回しにする。
 
 #殴りのskill trigger
 execute if score @s gis_job matches 1 if items entity @s weapon.mainhand *[minecraft:custom_data~{weapon:{trident:1b}}] run function gis:system/system_trigger/hurt_entity_with_trident

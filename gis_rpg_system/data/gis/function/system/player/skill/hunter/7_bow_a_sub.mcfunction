@@ -17,6 +17,8 @@ execute store result entity @s Motion[1] double 0.00003 run data get entity @s M
 execute store result entity @s Motion[2] double 0.00003 run data get entity @s Motion[2] 10000
 
 
-#鳥の見た目を乗せる
+#演出要素としてファントムを乗せる
+execute at @s run summon phantom ~ ~ ~ {Fire:10000,Silent:1b,Invulnerable:1b,NoAI:1b,Size:0,Tags:["no_mob_convert","ride_up_display"],attributes:[{id:"minecraft:generic.scale",base:0.7}]} 
 
-
+execute at @s on origin rotated as @s as @n[type=phantom,tag=ride_up_display] run teleport @s ~ ~ ~ ~ ~
+ride @n[type=phantom,tag=ride_up_display] mount @s
