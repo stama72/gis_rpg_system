@@ -5,10 +5,10 @@
 #とはいえ、まずはスキルそのものの実装を優先し、ダメージ処理の実装は一旦後回しにする。
 
 #殴りのskill trigger
-execute if score @s gis_job matches 1 if items entity @s weapon.mainhand *[minecraft:custom_data~{weapon:{trident:1b}}] run function gis:system/advancement/player_system_trigger/hurt_entity_with_trident
-execute if score @s gis_job matches 2 if items entity @s weapon.mainhand *[minecraft:custom_data~{weapon:{sword:1b}}] run function gis:system/advancement/player_system_trigger/hurt_entity_with_sword
-execute if score @s gis_job matches 2 if items entity @s weapon.mainhand *[minecraft:custom_data~{weapon:{fist:1b}}] run function gis:system/advancement/player_system_trigger/hurt_entity_with_fist
-execute if score @s gis_job matches 3 if items entity @s weapon.mainhand *[minecraft:custom_data~{weapon:{dagger:1b}}] run function gis:system/advancement/player_system_trigger/hurt_entity_with_dagger
+execute if score @s gis_job matches 1 if items entity @s weapon.mainhand *[minecraft:custom_data~{weapon:{trident:1b}}] run function gis:system/system_trigger/hurt_entity_with_trident
+execute if score @s gis_job matches 2 if items entity @s weapon.mainhand *[minecraft:custom_data~{weapon:{sword:1b}}] run function gis:system/system_trigger/hurt_entity_with_sword
+execute if score @s gis_job matches 2 if items entity @s weapon.mainhand *[minecraft:custom_data~{weapon:{fist:1b}}] run function gis:system/system_trigger/hurt_entity_with_fist
+execute if score @s gis_job matches 3 if items entity @s weapon.mainhand *[minecraft:custom_data~{weapon:{dagger:1b}}] run function gis:system/system_trigger/hurt_entity_with_dagger
 
 #tag_set
 tag @s add gis_player_attacker_check

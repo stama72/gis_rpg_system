@@ -10,6 +10,6 @@
     }
   },
   "rewards": {
-    "function": "gis:system/advancement/player_system_trigger/use_shield"
+    "function": "gis:system/system_trigger/use_shield"
   }
 }

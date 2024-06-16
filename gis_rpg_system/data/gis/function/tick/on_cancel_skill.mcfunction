@@ -7,7 +7,7 @@
 #以下スキルを終了するもの
 execute if score @s gis_job matches 1 if score @s gis_skill_using matches 2 run function gis:system/player/skill/tank/2_shield_a_cancel
 execute if score @s gis_job matches 1 if score @s gis_skill_using matches 6 run function gis:system/player/skill/tank/6_shield_a_finish
-execute if score @s gis_job matches 1 if score @s gis_skill_using matches 7 run function gis:system/player/skill/tank/7_trident_c_finish
+execute if score @s gis_job matches 1 if score @s gis_skill_using matches 7 run function gis:system/player/skill/tank/7_trident_a_finish
 execute if score @s gis_job matches 1 if score @s gis_skill_using matches 8 run function gis:system/player/skill/tank/8_shield_a_cancel
 
 #以下発射物系。一定時間経ったらスキルを呼び出し/終了するもの

@@ -1,4 +1,4 @@
-#弓で矢を放った時
+#弓で矢を放った時(エンチャ由来)
 
 scoreboard players set @s gis_shoot_arrow 0
 

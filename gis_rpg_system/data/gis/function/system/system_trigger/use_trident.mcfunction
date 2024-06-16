@@ -8,8 +8,8 @@ scoreboard players add @s gis_trident_using_count 1
 ##skill
 execute unless score @s gis_job matches 1 run return 0
 #continue
-execute if score @s gis_skill_using matches 7 as @s[x_rotation=-90..0] if score @s gis_skill_main_1 matches 7 if predicate gis:entity_check/is_sneak run function gis:system/player/skill/tank/7_trident_c_continue
+execute if score @s gis_skill_using matches 7 as @s[x_rotation=-90..0] if score @s gis_skill_main_1 matches 7 if predicate gis:entity_check/is_sneak run function gis:system/player/skill/tank/7_trident_a_continue
 
 #new
 execute unless score @s gis_cooltime matches 0 run return 0
-execute if score @s gis_skill_main_1 matches 7 as @s[x_rotation=-90..-30] if predicate gis:entity_check/is_sneak run function gis:system/player/skill/tank/7_trident_c
+execute if score @s gis_skill_main_1 matches 7 as @s[x_rotation=-90..-30] if predicate gis:entity_check/is_sneak run function gis:system/player/skill/tank/7_trident_a

@@ -1,3 +1,6 @@
+
+#entityがプレイヤーからの攻撃以外の炎上や落下などでダメージを受けた場合
+
 ##damage_get
 function gis:system/entity/entity_no_player_damage_input
 

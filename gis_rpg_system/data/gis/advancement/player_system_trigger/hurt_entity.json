@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "gis:system/advancement/player_system_trigger/hurt_entity"
+    "function": "gis:system/system_trigger/hurt_entity"
   }
 }

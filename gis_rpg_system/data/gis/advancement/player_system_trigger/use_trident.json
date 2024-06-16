@@ -10,7 +10,7 @@
       }
     },
     "rewards": {
-      "function": "gis:system/advancement/player_system_trigger/use_trident"
+      "function": "gis:system/system_trigger/use_trident"
     }
   }
   
