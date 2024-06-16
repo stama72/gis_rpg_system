@@ -1,3 +1,6 @@
+#殴り攻撃
+
+execute unless score @s gis_job matches 1 run return 0
 
 #new
 execute unless score @s gis_cooltime matches 0 run return 0

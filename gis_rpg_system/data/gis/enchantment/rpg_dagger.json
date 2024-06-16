@@ -1,0 +1,39 @@
+{
+    "description": "武器種：短剣",
+    "supported_items": "#minecraft:axes",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+      "base": 0,
+      "per_level_above_first": 0
+    },
+    "max_cost": {
+      "base": 0,
+      "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:post_attack": [
+        {
+          "enchanted": "attacker",
+          "affected": "attacker",
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "gis:system/system_trigger/dagger/attack"
+          },
+          "requirements": {
+            "condition": "minecraft:damage_source_properties",
+            "predicate": {
+              "direct_entity": {
+                "type": "minecraft:player"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+  

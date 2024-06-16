@@ -1,6 +1,7 @@
 #弓で矢を放った時(エンチャ由来)
 #実行者はプレイヤー
 
+execute unless score @s gis_job matches 3 run return 0
 #new
 execute unless score @s gis_cooltime matches 0 run return 0
 execute if score @s gis_skill_main_2 matches 1 as @s[x_rotation=-90..-35] run return run function gis:system/player/skill/hunter/1_bow_b
