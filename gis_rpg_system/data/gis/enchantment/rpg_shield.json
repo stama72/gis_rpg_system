@@ -1,11 +1,6 @@
 {
-  "description": "武器種：拳",
-  "supported_items": [
-    "minecraft:diamond_horse_armor",
-    "minecraft:golden_horse_armor",
-    "minecraft:iron_horse_armor",
-    "minecraft:leather_horse_armor"
-  ],
+  "description": "武器種：盾",
+  "supported_items": "minecraft:shield",
   "weight": 1,
   "max_level": 1,
   "min_cost": {
@@ -18,7 +13,8 @@
   },
   "anvil_cost": 0,
   "slots": [
-    "mainhand"
+    "mainhand",
+    "offhand"
   ],
   "effects": {
     "minecraft:post_attack": [
@@ -27,7 +23,7 @@
         "affected": "attacker",
         "effect": {
           "type": "minecraft:run_function",
-          "function": "gis:system/system_trigger/fist/attack"
+          "function": "gis:system/system_trigger/book/attack"
         },
         "requirements": {
           "condition": "minecraft:damage_source_properties",

@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:enchantments": [
+              {
+                "enchantments": "gis:rpg_sword"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "gis:system/system_trigger/sword/eat"
+  }
+}

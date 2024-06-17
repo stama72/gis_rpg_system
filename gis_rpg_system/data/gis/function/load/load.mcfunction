@@ -18,6 +18,9 @@ scoreboard objectives setdisplay sidebar gis_cooltime
 scoreboard objectives add gis_skill_using dummy "skills being used or prepared"
 scoreboard objectives add gis_skill_using_count dummy "time spent using or preparing skills"
 scoreboard objectives add gis_skill_using_count_sub dummy "copy of gis_skill_using_count"
+scoreboard objectives add gis_skill_action_count dummy "time spent playing skill action "
+scoreboard objectives add gis_skill_ignore_cancel_count dummy "time to reserve skill canceling"
+
 
 scoreboard objectives add gis_skill_main_1 dummy "skill slot main weapon 1"
 scoreboard objectives add gis_skill_main_2 dummy "skill slot main weapon 2"

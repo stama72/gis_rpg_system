@@ -1,4 +1,8 @@
 
+
+
+execute if score @s gis_skill_ignore_cancel_count matches 1.. run return run scoreboard players remove @s gis_skill_ignore_cancel_count 1
+
 #以下そのまま放置するもののメモ
 #コンボ系
 #job 2 skill 3
@@ -9,6 +13,8 @@ execute if score @s gis_job matches 1 if score @s gis_skill_using matches 2 run 
 execute if score @s gis_job matches 1 if score @s gis_skill_using matches 6 run function gis:system/player/skill/tank/6_shield_a_finish
 execute if score @s gis_job matches 1 if score @s gis_skill_using matches 7 run function gis:system/player/skill/tank/7_trident_a_finish
 execute if score @s gis_job matches 1 if score @s gis_skill_using matches 8 run function gis:system/player/skill/tank/8_shield_a_cancel
+
+execute if score @s gis_job matches 3 if score @s gis_skill_using matches 4 unless score @s gis_skill_action_count matches 1.. run function gis:system/player/skill/hunter/4_dagger_a_finish
 
 #以下発射物系。一定時間経ったらスキルを呼び出し/終了するもの
 execute if score @s gis_job matches 1 if score @s gis_skill_using matches 3 run scoreboard players add @s gis_skill_using_count 1

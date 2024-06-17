@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation": 0
+      }
+    }
+  }
+]

@@ -1,10 +1,8 @@
 {
-  "description": "武器種：拳",
+  "description": "武器種：杖",
   "supported_items": [
-    "minecraft:diamond_horse_armor",
-    "minecraft:golden_horse_armor",
-    "minecraft:iron_horse_armor",
-    "minecraft:leather_horse_armor"
+    "minecraft:stick",
+    "minecraft:carrot_on_a_stick"
   ],
   "weight": 1,
   "max_level": 1,
@@ -27,7 +25,7 @@
         "affected": "attacker",
         "effect": {
           "type": "minecraft:run_function",
-          "function": "gis:system/system_trigger/fist/attack"
+          "function": "gis:system/system_trigger/wand/attack"
         },
         "requirements": {
           "condition": "minecraft:damage_source_properties",
