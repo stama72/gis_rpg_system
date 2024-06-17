@@ -2,6 +2,7 @@
   "description": "武器種：杖",
   "supported_items": [
     "minecraft:stick",
+    "minecraft:torch",
     "minecraft:carrot_on_a_stick"
   ],
   "weight": 1,

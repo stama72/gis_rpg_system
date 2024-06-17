@@ -1,6 +1,9 @@
 {
   "description": "武器種：魔導書",
-  "supported_items": "minecraft:book",
+  "supported_items": [
+    "minecraft:book",
+    "minecraft:paper"
+  ],
   "weight": 1,
   "max_level": 1,
   "min_cost": {
