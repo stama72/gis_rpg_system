@@ -3,7 +3,7 @@ scoreboard players set @s gis_cooltime 100
 
 scoreboard players set @s gis_skill_using 1
 scoreboard players set @s gis_skill_using_count 1
-tellraw @s "アローレイン！"
+say "アローレイン！"
 execute at @s run playsound minecraft:entity.firework_rocket.launch master @a ~ ~ ~ 1 0.8
 
 #矢に追跡タグを付ける

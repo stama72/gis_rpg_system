@@ -1,7 +1,6 @@
 
 advancement revoke @s only gis:player_system_trigger/eat_dagger
 
-#say dagger
 
 ##skill
 execute unless score @s gis_job matches 3 run return 0

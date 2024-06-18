@@ -4,7 +4,7 @@ scoreboard players set @s gis_cooltime 200
 
 scoreboard players set @s gis_skill_using 9
 scoreboard players set @s gis_skill_using_count 1
-tellraw @s "フルブラウン・ディグニティ！"
+say "フルブラウン・ディグニティ！"
 execute at @s run playsound entity.arrow.shoot master @a ~ ~ ~ 1 1
 
 #矢に追跡タグを付ける
