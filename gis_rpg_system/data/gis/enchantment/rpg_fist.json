@@ -1,10 +1,8 @@
 {
   "description": "武器種：拳",
   "supported_items": [
-    "minecraft:diamond_horse_armor",
-    "minecraft:golden_horse_armor",
-    "minecraft:iron_horse_armor",
-    "minecraft:leather_horse_armor"
+    "minecraft:iron_nugget",
+    "minecraft:gold_nugget"
   ],
   "weight": 1,
   "max_level": 1,

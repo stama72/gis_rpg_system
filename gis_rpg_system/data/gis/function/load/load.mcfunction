@@ -16,10 +16,13 @@ scoreboard objectives setdisplay sidebar gis_cooltime
 
 #skill
 scoreboard objectives add gis_skill_using dummy "skills being used or prepared"
-scoreboard objectives add gis_skill_using_count dummy "time spent using or preparing skills"
+scoreboard objectives add gis_skill_using_count dummy "time spent using and preparing skills"
 scoreboard objectives add gis_skill_using_count_sub dummy "copy of gis_skill_using_count"
-scoreboard objectives add gis_skill_action_count dummy "time spent playing skill action "
-scoreboard objectives add gis_skill_ignore_cancel_count dummy "time to reserve skill canceling"
+scoreboard objectives add gis_skill_action_count dummy "time spent doing skill action "
+scoreboard objectives add gis_skill_ignore_cancel_count dummy "time for wait to cancel skill"
+
+scoreboard objectives add gis_sneak_count dummy "how many times the player has sneaked recently"
+scoreboard objectives add gis_sneak_interrupted_count dummy "how long the player has not been sneaking"
 
 
 scoreboard objectives add gis_skill_main_1 dummy "skill slot main weapon 1"

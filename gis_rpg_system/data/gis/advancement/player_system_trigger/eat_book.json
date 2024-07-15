@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "gis:system/system_trigger/eat_book"
+    "function": "gis:system/system_trigger/book/eat_book"
   }
 }

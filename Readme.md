@@ -1,6 +1,6 @@
 
 ### 開発バージョン  
-1.20.5
+1.21
 
 ### スプレッドシート
 https://docs.google.com/spreadsheets/d/1x2YA6I-pkyaqhWyQVidxWZLpzbHc8oWMAFllHdvJdAM/edit?usp=sharing
@@ -11,7 +11,7 @@ https://docs.google.com/spreadsheets/d/1x2YA6I-pkyaqhWyQVidxWZLpzbHc8oWMAFllHdvJ
 ## スキル
 1_bow_a なら、  
 スキル番号1、アイテム種bow、トリガー種aという意味。  
-トリガー種は、素(右クリックなど)がa、特殊(スニーク+右クリックなど)がb、その他(スニークのみなど)がc  
+トリガー種は、素(右クリックなど)がa、特殊(スニーク+右クリックなど)がb
 
 
 ### 豆知識類
@@ -20,4 +20,8 @@ https://docs.google.com/spreadsheets/d/1x2YA6I-pkyaqhWyQVidxWZLpzbHc8oWMAFllHdvJ
 アンデッドかどうかの判定は＃minecraft:inverted_healing_and_harmを使えば良い
 
 
-execute if score @s gis_job matches 3 if items entity @s weapon.mainhand *[minecraft:custom_data~{weapon:{dagger:1b}}]
+## サンプルアイテム
+サンプルアイテムを作りたい時は、対応したアイテム(トライデント、盾、鉄剣、鉄塊、弓、鉄斧、棒、本など)を手に持って、/enchant @s gis:bowなどとすれば、武器種が設定できる。
+食べ物属性を付けて、右クリックでスキルを使用できるようにしたい場合は、アイテムを手に持って、/item modify @s mainhand gis:convert_to_food_100sとすれば良い。
+gis:convert_to_food_100sの場合は食べるのにかかる時間が100秒に設定されるが、gis:convert_to_food_10000sの方を使えば、それを10000秒に設定して、食べ動作のスピードをほとんど分からないくらいまで遅くすることもできる。
+

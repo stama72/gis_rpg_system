@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "gis:system/system_trigger/eat_wand"
+    "function": "gis:system/system_trigger/wand/eat_wand"
   }
 }
