@@ -5,7 +5,7 @@ scoreboard players set @s gis_skill_using 0
 scoreboard players set @s gis_skill_using_count 0
 
 
-say "スピリットロア！"
+tellraw @s "スピリットロア！"
 
 #敵にデバフ
 execute at @s as @e[distance=..10,type=#minecraft:enemy] run effect give @s slowness 2 4 false

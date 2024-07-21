@@ -1,7 +1,7 @@
 #ペネトレイト
 scoreboard players set @s gis_cooltime 100
 
-say "ペネトレイト！"
+tellraw @s "ペネトレイト！"
 
 #playerの位置にマーカー
 execute at @s run summon marker ~ ~ ~ {UUID:[I;90,0,2,1]}

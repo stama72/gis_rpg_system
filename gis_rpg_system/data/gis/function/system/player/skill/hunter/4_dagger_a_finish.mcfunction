@@ -1,6 +1,6 @@
 #ソニックミンス
 
-say "ソニックミンス！"
+tellraw @s "ソニックミンス！"
 
 scoreboard players set @s gis_skill_action_count 2
 

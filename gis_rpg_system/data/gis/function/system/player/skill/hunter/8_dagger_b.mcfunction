@@ -3,7 +3,7 @@ scoreboard players set @s gis_cooltime 100
 scoreboard players set @s gis_skill_using 8
 scoreboard players set @s gis_skill_using_count 1
 
-say "ビヘッドダガー！"
+tellraw @s "ビヘッドダガー！"
 execute at @s run playsound entity.item.break master @a ~ ~ ~ 1 1
 
 #敵mob

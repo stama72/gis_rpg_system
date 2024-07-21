@@ -3,7 +3,7 @@
 
 scoreboard players set @s gis_cooltime 150
 
-say "リザレクトバード！"
+tellraw @s "リザレクトバード！"
 execute at @s run playsound item.firecharge.use master @a ~ ~ ~ 1 1
 
 #矢をいじる

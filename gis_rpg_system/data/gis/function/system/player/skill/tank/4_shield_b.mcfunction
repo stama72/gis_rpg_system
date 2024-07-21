@@ -3,7 +3,7 @@
 scoreboard players set @s gis_cooltime 80
 
 #周囲の敵を吹っ飛ばしながらダメージを与える。
-say "シールドバッシュ！"
+tellraw @s "シールドバッシュ！"
 execute at @s run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1 1.5
 #execute at @s at @e[distance=..3,type=#enemy] run particle gust ~ ~0.5 ~ 0 0 0 1 1 normal @a
 execute at @s at @e[distance=..3,type=#enemy] run playsound minecraft:item.shield.block master @a ~ ~ ~ 1 1
