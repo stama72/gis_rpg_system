@@ -2,14 +2,12 @@
 #temp
 
 scoreboard players operation #attack gis_temp_1 = @p[tag=gis_player_attacker_check] gis_player_status_int
-scoreboard players set @s gis_damage 1
-scoreboard players operation @s gis_damage = #magic_temp gis_damage
 
 
 scoreboard players set #defence gis_temp_1 0
 execute store result score #defence gis_temp_1 run data get entity @s ArmorItems[3].components."minecraft:enchantments".levels."gis:rpg_status_res"
 
-say player magic skill
+say player magical skill
 
 #damage_calculate
 function gis:system/entity/entity_damage_calculate

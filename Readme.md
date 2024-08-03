@@ -12,6 +12,10 @@ https://docs.google.com/spreadsheets/d/1x2YA6I-pkyaqhWyQVidxWZLpzbHc8oWMAFllHdvJ
 スキル番号1、アイテム種bow、トリガー種aという意味。  
 トリガー種は、素(右クリックなど)がa、特殊(スニーク+右クリックなど)がb
 
+## ダメージの与え方
+計算にintとresを使う魔法ダメージなら、function gis:system/player/skill/damage_with_magic {enemy:"@n[type=!player]",damage:"50"}
+計算にatkとdefを使う物理ダメージなら、function gis:system/player/skill/damage_with_physical {enemy:"@n[type=!player]",damage:"50"}
+enemyはセレクター、damageはint型整数です。
 
 ### 技術メモ
 
