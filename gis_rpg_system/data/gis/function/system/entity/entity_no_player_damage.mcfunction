@@ -3,6 +3,8 @@
 
 ##damage_get
 function gis:system/entity/entity_no_player_damage_input
+execute if score @s gis_damage matches 0 run return 0
+
 scoreboard players set #attack gis_temp_1 0
 
 scoreboard players set #defence gis_temp_1 0

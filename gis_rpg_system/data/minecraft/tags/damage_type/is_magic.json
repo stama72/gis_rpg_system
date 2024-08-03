@@ -1,0 +1,8 @@
+{
+    "replace": true,
+    "values": [
+      "minecraft:magic",
+      "indirect_magic"
+    ]
+  }
+  

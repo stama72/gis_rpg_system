@@ -31,7 +31,7 @@
         "affected": "attacker",
         "effect": {
           "type": "minecraft:run_function",
-          "function": "gis:system/system_trigger/hurt_entity"
+          "function": "gis:system/player/player_attack_entity/hurt_entity"
         },
         "requirements": {
           "condition": "minecraft:entity_properties",
@@ -46,7 +46,7 @@
         "affected": "victim",
         "effect": {
           "type": "minecraft:run_function",
-          "function": "gis:system/system_trigger/hurt_entity_sub"
+          "function": "gis:system/player/player_attack_entity/hurt_entity_sub"
         },
         "requirements": {
           "condition": "minecraft:entity_properties",

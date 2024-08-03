@@ -9,7 +9,9 @@ execute as @s[nbt={inGround:1b}] run return run function gis:system/player/skill
 execute at @s positioned ~ ~0.2 ~ run particle flame ~ ~ ~ 0 0 0 0.01 1 normal @a
 
 #敵にダメージを与える
-execute at @s as @e[type=#enemy,distance=..3,tag=!arrow_skill_7_hit_enemy] run function gis:system/player/skill/hunter/7_bow_a_arrow_sub
+
+execute at @s if entity @e[type=#enemy,distance=..3,tag=!arrow_skill_7_hit_enemy] on origin run function gis:system/player/skill/damage_with_physical {enemy:"@e[type=#enemy,distance=..3,tag=!arrow_skill_7_hit_enemy]",damage:"50"}
+execute at @s as @e[type=#enemy,distance=..3,tag=!arrow_skill_7_hit_enemy] run tag @s add arrow_skill_7_hit_enemy
 execute at @s as @e[type=#enemy,distance=3.01..4] run tag @s remove arrow_skill_7_hit_enemy
 
 

@@ -1,7 +1,6 @@
 ##damage_get
 #temp
 scoreboard players operation #attack gis_temp_1 = @p[tag=gis_player_attacker_check] gis_player_status_atk
-scoreboard players operation @s gis_damage = @s gis_temp_1
 
 scoreboard players set #defence gis_temp_1 0
 execute store result score #defence gis_temp_1 run data get entity @s ArmorItems[3].components."minecraft:enchantments".levels."gis:rpg_status_def"

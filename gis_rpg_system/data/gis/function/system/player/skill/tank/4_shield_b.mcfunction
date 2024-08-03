@@ -7,7 +7,7 @@ tellraw @s "シールドバッシュ！"
 execute at @s run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1 1.5
 #execute at @s at @e[distance=..3,type=#enemy] run particle gust ~ ~0.5 ~ 0 0 0 1 1 normal @a
 execute at @s at @e[distance=..3,type=#enemy] run playsound minecraft:item.shield.block master @a ~ ~ ~ 1 1
-execute at @s as @e[distance=..3,type=#enemy] run damage @s 20 player_attack by @p
+execute at @s run function gis:system/player/skill/damage_with_physical {enemy:"@e[distance=..3,type=#enemy]",damage:"20"}
 
 #距離計測を使いながら、敵をmotionで吹っ飛ばす
 execute store result score #skill_tank4_x gis_temp_1 run data get entity @s Pos[0] 1000
