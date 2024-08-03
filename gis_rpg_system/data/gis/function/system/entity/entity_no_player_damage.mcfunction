@@ -3,6 +3,12 @@
 
 ##damage_get
 function gis:system/entity/entity_no_player_damage_input
+scoreboard players set #attack gis_temp_1 0
+
+scoreboard players set #defence gis_temp_1 0
+execute store result score #defence gis_temp_1 run data get entity @s ArmorItems[3].components."minecraft:enchantments".levels."gis:rpg_status_def"
+
+say non player damage
 
 #damage_calculate
 function gis:system/entity/entity_damage_calculate

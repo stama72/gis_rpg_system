@@ -1,0 +1,61 @@
+{
+  "description": "DEF_防御力",
+  "supported_items": [
+    "minecraft:stone_button",
+    "minecraft:iron_helmet",
+    "minecraft:golden_helmet",
+    "minecraft:turtle_helmet",
+    "minecraft:diamond_helmet",
+    "minecraft:netherite_helmet",
+    "minecraft:chainmail_helmet",
+    "minecraft:leather_helmet"
+  ],
+  "weight": 1,
+  "max_level": 255,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "victim",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "gis:system/system_trigger/hurt_entity"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "type": "minecraft:player"
+          }
+        }
+      },
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "gis:system/system_trigger/hurt_entity_sub"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "type": "minecraft:player"
+          }
+        }
+      }
+    ]
+  }
+}

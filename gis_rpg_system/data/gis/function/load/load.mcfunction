@@ -6,10 +6,10 @@
 #player input
 
 #player_status
-scoreboard objectives add gis_player_status_atk dummy "atk"
-scoreboard objectives add gis_player_status_def dummy "def"
-scoreboard objectives add gis_player_status_matk dummy "matk"
-scoreboard objectives add gis_player_status_mdef dummy "mdef"
+scoreboard objectives add gis_player_status_atk dummy "attack"
+scoreboard objectives add gis_player_status_def dummy "defense"
+scoreboard objectives add gis_player_status_int dummy "intelligence"
+scoreboard objectives add gis_player_status_res dummy "resitance"
 
 scoreboard objectives add gis_cooltime dummy "skill cooltime"
 scoreboard objectives setdisplay sidebar gis_cooltime

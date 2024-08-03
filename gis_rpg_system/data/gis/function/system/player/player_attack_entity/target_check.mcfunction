@@ -1,11 +1,11 @@
 ##damage_get_&reset
-execute store result score @s gis_temp_1 run data get entity @s Health -10000
-scoreboard players add @s gis_temp_1 10240000
+execute store result score @s gis_temp_1 run data get entity @s Health -100
+scoreboard players add @s gis_temp_1 102400
 
 
 ##target_check
 #tag_set
-execute if score @s gis_temp_1 matches 1..200 run tag @s add gis_entity_defenser_check
+execute if score @s gis_temp_1 matches 1..2000 run tag @s add gis_entity_defenser_check
 
 #damage_calculate
 execute if entity @s[tag=gis_entity_defenser_check] run function gis:system/entity/entity_player_damage

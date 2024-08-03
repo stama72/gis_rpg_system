@@ -5,13 +5,18 @@
 ### スプレッドシート
 https://docs.google.com/spreadsheets/d/1x2YA6I-pkyaqhWyQVidxWZLpzbHc8oWMAFllHdvJdAM/edit?usp=sharing
 
+### スキル
 
-### ファイル名について
-
-## スキル
+## ファイル名について
 1_bow_a なら、  
 スキル番号1、アイテム種bow、トリガー種aという意味。  
 トリガー種は、素(右クリックなど)がa、特殊(スニーク+右クリックなど)がb
+
+
+### 技術メモ
+
+## カスタムエンチャントのレベル値に任意の数値を代入
+execute store result entity @s ArmorItems[3].components."minecraft:enchantments".levels."gis:rpg_book" int 1 run ～
 
 
 ### 豆知識類

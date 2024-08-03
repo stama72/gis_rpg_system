@@ -1,0 +1,31 @@
+{
+  "description": "STR_通常攻撃力",
+  "supported_items": [
+    "minecraft:stone_button",
+    "iron_helmet",
+    "golden_helmet",
+    "turtle_helmet",
+    "diamond_helmet",
+    "netherite_helmet",
+    "chainmail_helmet",
+    "leather_helmet"
+
+  ],
+  "weight": 1,
+  "max_level": 255,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    
+  }
+}
