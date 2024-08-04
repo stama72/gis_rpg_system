@@ -1,11 +1,13 @@
 ##damage_get
-#temp
+execute if entity @s[tag=no_mob_convert] run return 0
+
+#status
 scoreboard players operation #attack gis_temp_1 = @p[tag=gis_player_attacker_check] gis_player_status_atk
 
 scoreboard players set #defence gis_temp_1 0
 execute store result score #defence gis_temp_1 run data get entity @s ArmorItems[3].components."minecraft:enchantments".levels."gis:rpg_status_def"
 
-say player attack
+
 
 #damage_calculate
 function gis:system/entity/entity_damage_calculate

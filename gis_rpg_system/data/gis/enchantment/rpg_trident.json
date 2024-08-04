@@ -32,6 +32,38 @@
               }
             }
           }
+        },
+        {
+          "enchanted": "attacker",
+          "affected": "victim",
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "gis:system/player/skill/tank/1_trident_b_target"
+          },
+          "requirements": {
+            "condition": "minecraft:entity_scores",
+            "entity": "attacker",
+            "scores": {
+              "gis_skill_using": 1,
+              "gis_job": 1
+            }
+          }
+        },
+        {
+          "enchanted": "attacker",
+          "affected": "victim",
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "gis:system/player/skill/tank/9_trident_b_target"
+          },
+          "requirements": {
+            "condition": "minecraft:entity_scores",
+            "entity": "attacker",
+            "scores": {
+              "gis_skill_using": 9,
+              "gis_job": 1
+            }
+          }
         }
       ]
     }

@@ -3,6 +3,9 @@
 
 execute on origin unless score @s gis_job matches 3 run return 0
 execute on origin unless score @s gis_skill_using matches 9 run return 0
+
+particle firework ~ ~ ~ 0.0 0.0 0.0 0.01 2 normal @a
+
 execute on origin if score @s gis_skill_using_count matches 40.. run return 0
 
 execute on origin run scoreboard players operation #arrow_skill_9 gis_temp_1 = @s gis_skill_using_count

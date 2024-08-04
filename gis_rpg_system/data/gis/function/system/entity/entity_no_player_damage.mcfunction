@@ -1,5 +1,6 @@
 
 #entityがプレイヤーからの攻撃以外の炎上や落下などでダメージを受けた場合
+execute if entity @s[tag=no_mob_convert] run return 0
 
 ##damage_get
 function gis:system/entity/entity_no_player_damage_input

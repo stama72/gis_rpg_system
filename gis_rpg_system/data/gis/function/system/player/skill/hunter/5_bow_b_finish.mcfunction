@@ -2,10 +2,13 @@
 #プレイヤーが矢の位置にTP
 execute at @e[type=arrow,tag=arrow_skill_5_rain_shot,nbt={inGround:true}] run tp @s ~ ~ ~
 execute at @s facing entity @e[type=#enemy,distance=..5,limit=1,sort=nearest] feet run tp @s ~ ~ ~ ~ ~
+execute at @s run playsound minecraft:entity.player.teleport master @a ~ ~ ~ 0.5 1
 
 #衝撃波が発生
 execute at @s run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 0.8 1.3
-execute at @s run particle gust_emitter_small ~ ~-0.5 ~ 0 0 0 1 1 normal @a
+
+execute at @s run particle gust_emitter_large ~ ~ ~ 0 0 0 1 1 normal @a
+execute at @s run particle dust{color:[0.169,0.502,1.000],scale:2} ~ ~0.2 ~ 1 1 1 0.1 80 normal @a
 
 execute at @s run function gis:system/player/skill/damage_with_physical {enemy:"@e[distance=..3,type=#enemy]",damage:"50"}
 

@@ -3,7 +3,7 @@
 #2発目以降の打撃
 
 
-execute at @s run playsound minecraft:entity.vindicator.ambient master @a ~ ~ ~ 1 0.7
+execute at @s run playsound minecraft:entity.player.attack.crit master @a ~ ~ ~ 1 1.2
 
 
 
