@@ -8,6 +8,8 @@ execute if score @s gis_skill_ignore_cancel_count matches 1.. run return run sco
 execute if score @s gis_job matches 1 if score @s gis_skill_using matches 1 run scoreboard players set @s gis_skill_using 0
 execute if score @s gis_job matches 1 if score @s gis_skill_using matches 9 run scoreboard players set @s gis_skill_using 0
 
+execute if score @s gis_job matches 2 if score @s gis_skill_using matches 8 run scoreboard players set @s gis_skill_using 0
+
 execute if score @s gis_job matches 3 if score @s gis_skill_using matches 2 run scoreboard players set @s gis_skill_using 0
 execute if score @s gis_job matches 3 if score @s gis_skill_using matches 8 run scoreboard players set @s gis_skill_using 0
 

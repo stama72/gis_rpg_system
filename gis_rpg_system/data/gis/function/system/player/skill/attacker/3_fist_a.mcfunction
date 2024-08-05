@@ -8,3 +8,5 @@ execute at @s run playsound minecraft:entity.player.attack.crit master @a ~ ~ ~ 
 
 scoreboard players set @s gis_skill_action_count 1
 
+
+tag @s add fist_skill_3_player
