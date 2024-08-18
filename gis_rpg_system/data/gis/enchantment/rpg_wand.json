@@ -3,6 +3,7 @@
   "supported_items": [
     "minecraft:stick",
     "minecraft:torch",
+    "minecraft:soul_torch",
     "minecraft:carrot_on_a_stick"
   ],
   "weight": 1,

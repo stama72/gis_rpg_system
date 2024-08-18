@@ -1,5 +1,5 @@
 #フォイア・ヴァッサ
-scoreboard players add @s gis_skill_using_count 1
+execute if score @s gis_skill_action_count matches 0 run scoreboard players add @s gis_skill_using_count 1
 
 execute at @s run particle enchant ~ ~2.6 ~ 0 0 0 1 3 normal @a
 
