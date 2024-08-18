@@ -32,6 +32,38 @@
               }
             }
           }
+        },
+        {
+          "enchanted": "attacker",
+          "affected": "victim",
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "gis:system/player/skill/attacker/1_sword_a_enemy"
+          },
+          "requirements": {
+            "condition": "minecraft:entity_scores",
+            "entity": "attacker",
+            "scores": {
+              "gis_skill_using": 1,
+              "gis_job":2
+            }
+          }
+        },
+        {
+          "enchanted": "attacker",
+          "affected": "victim",
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "gis:system/player/skill/attacker/2_sword_a_enemy"
+          },
+          "requirements": {
+            "condition": "minecraft:entity_scores",
+            "entity": "attacker",
+            "scores": {
+              "gis_skill_using": 2,
+              "gis_job":2
+            }
+          }
         }
       ]
     }
