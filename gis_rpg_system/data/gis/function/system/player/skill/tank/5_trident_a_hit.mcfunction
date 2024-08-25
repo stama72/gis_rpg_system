@@ -8,9 +8,9 @@ scoreboard players set @s gis_skill_using_count 0
 tellraw @s "ドロージャベリンがhit！"
 
 #距離計測を使いながら、敵をmotionで引き寄せる
-execute store result score #skill_tank5_x gis_temp_1 run data get entity @s Pos[0] 1000
-execute store result score #skill_tank5_y gis_temp_1 run data get entity @s Pos[1] 1000
-execute store result score #skill_tank5_z gis_temp_1 run data get entity @s Pos[2] 1000
+execute store result score #player_x gis_temp_1 run data get entity @s Pos[0] 1000
+execute store result score #player_y gis_temp_1 run data get entity @s Pos[1] 1000
+execute store result score #player_z gis_temp_1 run data get entity @s Pos[2] 1000
 execute at @s run summon marker ~ ~ ~ {UUID:[I;90,0,1,2]}
 
 tag @s add trident_skill_5_player

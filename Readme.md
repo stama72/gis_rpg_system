@@ -1,35 +1,38 @@
 
-### 開発バージョン  
+## 開発バージョン  
 1.21
 
-### スプレッドシート
+## スプレッドシート
 https://docs.google.com/spreadsheets/d/1x2YA6I-pkyaqhWyQVidxWZLpzbHc8oWMAFllHdvJdAM/edit?usp=sharing
 
-### スキル
+## スキル
 
-## ファイル名について
+### ファイル名について
 1_bow_a なら、  
 スキル番号1、アイテム種bow、トリガー種aという意味。  
 トリガー種は、素(右クリックなど)がa、特殊(スニーク+右クリックなど)がb
 
-## ダメージの与え方
+### プレイヤーから敵へのダメージの与え方
+プレイヤーを実行者にして、
 計算にintとresを使う魔法ダメージなら、function gis:system/player/skill/damage_with_magic {enemy:"@n[type=!player]",damage:"50"}
 計算にatkとdefを使う物理ダメージなら、function gis:system/player/skill/damage_with_physical {enemy:"@n[type=!player]",damage:"50"}
 enemyはセレクター、damageはint型整数です。
 
-## 殴り系スキル発動時で通常攻撃を取りやめたい時に敵mobに付けるタグ
-tag @n[type=!player] add gis_skill_attacked
+あるいは、敵を実行者にして、
+function gis:system/player/skill/damage_with_magic_e {player:"@p[tag=wand_skill_1_player]",damage:"30"}
+function gis:system/player/skill/damage_with_physical_e {player:"@p[tag=sword_skill_1_player]",damage:"30"}
+のようにもできます。
+
+### 殴り系スキル発動時で通常攻撃を取りやめたい時に敵mobに付けるタグ
+tag @s add gis_skill_attacked
 
 
-### 技術メモ
+## 技術メモ
 
-## カスタムエンチャントのレベル値に任意の数値を代入
+### カスタムエンチャントのレベル値に任意の数値を代入
 execute store result entity @s ArmorItems[3].components."minecraft:enchantments".levels."gis:rpg_book" int 1 run ～
 
-
-### 豆知識類
-
-## tags
+### tags
 アンデッドかどうかの判定は＃minecraft:inverted_healing_and_harmを使えば良い
 
 
