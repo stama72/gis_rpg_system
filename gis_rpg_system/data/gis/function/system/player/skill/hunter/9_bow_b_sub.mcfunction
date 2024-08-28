@@ -10,7 +10,6 @@ data modify entity @s Item set value {id:"minecraft:tipped_arrow",count:1,compon
 #data modify entity @s Color set value 
 data modify entity @s pickup set value 0b
 data modify entity @s PierceLevel set value 5b
-data modify entity @s damage set value 300
 data modify entity @s NoGravity set value 1b
 
 execute store result entity @s Motion[0] double 0.00003 run data get entity @s Motion[0] 10000

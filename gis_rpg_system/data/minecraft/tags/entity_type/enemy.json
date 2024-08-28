@@ -7,6 +7,7 @@
    "minecraft:zombie_horse",
    "minecraft:zombie",
    "minecraft:zoglin",
+   "wolf",
    "minecraft:wither_skeleton",
    "minecraft:wither",
    "minecraft:witch",
@@ -26,8 +27,9 @@
    "minecraft:piglin",
    "minecraft:phantom",
    "minecraft:magma_cube",
+   "iron_golem",
    "minecraft:illusioner",
-   "minecraft:husk",
+  "minecraft:husk",
    "minecraft:hoglin",
    "minecraft:guardian",
    "minecraft:goat",
@@ -42,6 +44,8 @@
    "minecraft:dolphin",
    "minecraft:creeper",
    "minecraft:cave_spider",
+   "breeze",
+   "bogged",
    "minecraft:blaze",
    "minecraft:bee"
   ]

@@ -1,4 +1,4 @@
-#弓で矢を放った時(エンチャ由来)
+#弓で矢を放った時(スコア由来)
 #実行者はプレイヤー
 
 scoreboard players set @s gis_shoot_arrow 0

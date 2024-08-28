@@ -23,7 +23,7 @@
         "affected": "attacker",
         "effect": {
           "type": "minecraft:run_function",
-          "function": "gis:system/system_trigger/book/attack"
+          "function": "gis:system/system_trigger/shield/attack"
         },
         "requirements": {
           "condition": "minecraft:damage_source_properties",
@@ -31,6 +31,21 @@
             "direct_entity": {
               "type": "minecraft:player"
             }
+          }
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "gis:system/player/normal_attack/shield"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {            
+            "nbt": "{Tags:[\"normal_attack\"]}"
           }
         }
       }

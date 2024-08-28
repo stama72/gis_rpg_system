@@ -10,7 +10,7 @@
       }
     },
     "rewards": {
-      "function": "gis:system/system_trigger/use_trident"
+      "function": "gis:system/system_trigger/trident/use_trident"
     }
   }
   

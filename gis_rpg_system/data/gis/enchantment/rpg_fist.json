@@ -41,6 +41,21 @@
         "affected": "victim",
         "effect": {
           "type": "minecraft:run_function",
+          "function": "gis:system/player/normal_attack/fist"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {            
+            "nbt": "{Tags:[\"normal_attack\"]}"
+          }
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
           "function": "gis:system/player/skill/attacker/3_fist_a_enemy"
         },
         "requirements": {

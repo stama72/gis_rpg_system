@@ -65,13 +65,36 @@ scoreboard players set #7 gis_const 7
 scoreboard players set #8 gis_const 8
 scoreboard players set #9 gis_const 9
 scoreboard players set #10 gis_const 10
+scoreboard players set #11 gis_const 11
+scoreboard players set #12 gis_const 12
+scoreboard players set #13 gis_const 13
+scoreboard players set #14 gis_const 14
+scoreboard players set #15 gis_const 15
+scoreboard players set #16 gis_const 16
+scoreboard players set #17 gis_const 17
+scoreboard players set #18 gis_const 18
+scoreboard players set #19 gis_const 19
 scoreboard players set #20 gis_const 20
 scoreboard players set #30 gis_const 30
 scoreboard players set #40 gis_const 40
 scoreboard players set #50 gis_const 50
+scoreboard players set #60 gis_const 60
+scoreboard players set #70 gis_const 70
+scoreboard players set #80 gis_const 80
+scoreboard players set #90 gis_const 90
 scoreboard players set #100 gis_const 100
 scoreboard players set #200 gis_const 200
+scoreboard players set #300 gis_const 300
+scoreboard players set #400 gis_const 400
+scoreboard players set #500 gis_const 500
+scoreboard players set #600 gis_const 600
+scoreboard players set #700 gis_const 700
+scoreboard players set #800 gis_const 800
+scoreboard players set #900 gis_const 900
 scoreboard players set #1000 gis_const 1000
+scoreboard players set #1024 gis_const 1024
+scoreboard players set #2000 gis_const 2000
+
 
 ##create team
 team add gis_entity_hp_0

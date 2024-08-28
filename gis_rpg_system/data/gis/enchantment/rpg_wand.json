@@ -37,6 +37,21 @@
             }
           }
         }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "gis:system/player/normal_attack/wand"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {            
+            "nbt": "{Tags:[\"normal_attack\"]}"
+          }
+        }
       }
     ]
   }
