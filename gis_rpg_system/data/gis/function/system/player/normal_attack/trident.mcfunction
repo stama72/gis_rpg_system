@@ -10,7 +10,7 @@ execute if score @p[tag=normal_attack] gis_job matches 1 run scoreboard players 
 execute unless score @p[tag=normal_attack] gis_job matches 1 run scoreboard players operation @s gis_damage *= #5 gis_const
 #damage
 execute at @s run function gis:system/entity/entity_player_damage
-say player normal attack
+say player trident attack
 
 #reset
 tag @p[tag=normal_attack] remove gis_player_attacker_check

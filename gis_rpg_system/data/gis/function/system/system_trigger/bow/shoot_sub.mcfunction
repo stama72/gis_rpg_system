@@ -1,4 +1,4 @@
-#弓で矢を放った時(エンチャ由来)
+#弓で矢を放った時(スコア由来)
 #実行者はプレイヤー
 
 execute unless score @s gis_job matches 3 run return 0

@@ -1,0 +1,19 @@
+[
+    {
+        "function": "minecraft:set_item",
+        "item": "minecraft:stick",
+        "conditions": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:torch",
+              "components": {
+                "minecraft:enchantments": {
+                  "gis:rpg_wand": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+]

@@ -1,0 +1,19 @@
+[
+  {
+      "function": "minecraft:set_item",
+      "item": "minecraft:paper",
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "minecraft:book",
+            "components": {
+              "minecraft:enchantments": {
+                "gis:rpg_book": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+]

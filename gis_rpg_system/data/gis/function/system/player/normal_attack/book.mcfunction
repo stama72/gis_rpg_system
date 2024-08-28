@@ -9,7 +9,7 @@ scoreboard players operation @s gis_damage = @s gis_temp_1
 scoreboard players operation @s gis_damage *= #2 gis_const
 #damage
 execute at @s run function gis:system/entity/entity_player_damage
-say player normal attack
+say player book attack
 
 #reset
 tag @p[tag=normal_attack] remove gis_player_attacker_check

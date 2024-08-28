@@ -27,13 +27,14 @@ scoreboard players operation #skill_hunter3_e_z gis_temp_1 /= #get_distance gis_
 
 scoreboard players operation #skill_hunter3_e_y gis_temp_1 += #500 gis_const
 
-#motionに代入
-execute store result entity @s Motion.[0] double 0.005 run scoreboard players get #skill_hunter3_e_x gis_temp_1
-execute store result entity @s Motion.[1] double 0.002 run scoreboard players get #skill_hunter3_e_y gis_temp_1
-execute store result entity @s Motion.[2] double 0.005 run scoreboard players get #skill_hunter3_e_z gis_temp_1
-
 #向き変更
-execute facing entity @e[tag=shot_arrow_skill_3,limit=1,sort=nearest] feet rotated ~180 ~ run tp @s ~ ~ ~ ~ ~
+execute at @s rotated ~180 ~ run tp @s ~ ~ ~ ~ ~
+
+#motionに代入
+execute store result entity @s Motion.[0] double 0.001 run scoreboard players get #skill_hunter3_e_x gis_temp_1
+#execute store result entity @s Motion.[1] double 0.001 run scoreboard players get #skill_hunter3_e_y gis_temp_1
+execute store result entity @s Motion.[2] double 0.001 run scoreboard players get #skill_hunter3_e_z gis_temp_1
+
 
 tag @s add arrow_skill_3_hit_projectile
 

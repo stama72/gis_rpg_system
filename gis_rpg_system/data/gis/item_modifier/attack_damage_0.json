@@ -1,0 +1,20 @@
+[
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:attribute_modifiers": {
+          "modifiers": [
+            {
+              "id": "attack_damage_0",
+              "type": "minecraft:generic.attack_damage",
+              "amount": 0,
+              "operation": "add_value",
+              "slot": "any"
+            }
+          ],
+          "show_in_tooltip": false
+        }
+      }
+    }
+  ]
+  

@@ -1,15 +1,15 @@
 [
-  {
+{
     "function": "minecraft:set_item",
-    "item": "minecraft:stone_axe",
+    "item": "minecraft:iron_nugget",
     "conditions": [
       {
         "condition": "minecraft:match_tool",
         "predicate": {
-          "items": "minecraft:iron_axe",
+          "items": "minecraft:gold_nugget",
           "components": {
             "minecraft:enchantments": {
-              "gis:rpg_dagger": 1
+              "gis:rpg_fist": 1
             }
           }
         }

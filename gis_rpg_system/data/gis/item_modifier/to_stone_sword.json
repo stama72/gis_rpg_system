@@ -1,0 +1,19 @@
+[
+  {
+  "function": "minecraft:set_item",
+  "item": "minecraft:stone_sword",
+  "conditions": [
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "items": "minecraft:iron_sword",
+        "components": {
+          "minecraft:enchantments": {
+            "gis:rpg_sword": 1
+          }
+        }
+      }
+    }
+  ]
+}
+]

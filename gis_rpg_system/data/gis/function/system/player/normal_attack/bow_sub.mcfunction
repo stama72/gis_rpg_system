@@ -11,4 +11,6 @@ tag @a remove arrow_skill_5_player
 tag @a remove arrow_skill_7_player
 tag @a remove arrow_skill_9_player
 execute if entity @p[tag=normal_attack,tag=arrow_normal_attack_player] run scoreboard players operation @s gis_damage *= #12 gis_const
+execute if entity @p[tag=normal_attack,tag=arrow_normal_attack_player] run say player bow shot hit
+execute unless entity @p[tag=normal_attack,tag=arrow_normal_attack_player] run say player bow skill hit
 tag @a remove arrow_normal_attack_player

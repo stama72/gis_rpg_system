@@ -12,7 +12,7 @@ execute if score @p[tag=normal_attack] gis_job matches 5 run scoreboard players 
 
 #damage
 execute at @s run function gis:system/entity/entity_player_damage
-say player normal attack
+say player wand attack
 
 #reset
 tag @p[tag=normal_attack] remove gis_player_attacker_check

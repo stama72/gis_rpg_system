@@ -1,0 +1,19 @@
+[
+  {
+      "function": "minecraft:set_item",
+      "item": "minecraft:gold_nugget",
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "minecraft:iron_nugget",
+            "components": {
+              "minecraft:enchantments": {
+                "gis:rpg_fist": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
