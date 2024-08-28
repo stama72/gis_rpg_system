@@ -28,5 +28,5 @@ scoreboard players set @s gis_skill_using 0
 scoreboard players set @s gis_skill_using_count 0
 scoreboard players set @s gis_skill_action_count 0
 
-item modify entity @s weapon.mainhand gis:convert_to_original_item
+item modify entity @s weapon.mainhand gis:to_iron_axe
 item modify entity @s weapon.mainhand gis:convert_to_food_10000s
