@@ -42,7 +42,8 @@
     "minecraft:chest_boat",
     "minecraft:boat",
     "minecraft:block_display",
-    "breeze_wind_charge",
+    "minecraft:breeze_wind_charge",
+    "wind_charge",
     "minecraft:arrow",
     "minecraft:armor_stand",
     "minecraft:area_effect_cloud"

@@ -1,19 +1,23 @@
 [
-    {
-      "function": "minecraft:set_item",
-      "item": "minecraft:iron_axe",
-      "conditions": [
-        {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "items": "minecraft:stone_axe",
-            "components": {
-              "minecraft:enchantments": {
-                "gis:rpg_dagger": 1
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:iron_axe",
+    "conditions": [
+      {
+        "condition": "minecraft:match_tool",
+        "predicate": {
+          "items": "minecraft:stone_axe",
+          "count": 1,
+          "predicates": {
+            "minecraft:enchantments": [
+              {
+                "enchantments": "gis:rpg_dagger",
+                "levels": 1
               }
-            }
+            ]
           }
         }
-      ]
-    }
+      }
+    ]
+  }
 ]

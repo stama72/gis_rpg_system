@@ -52,6 +52,48 @@
             "nbt": "{Tags:[\"normal_attack\"]}"
           }
         }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "damaging_entity",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "gis:system/system_trigger/wand/projectile_hit"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "type": "#minecraft:projectile"
+          }
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "gis:system/system_trigger/wand/projectile_skill"
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "type": "#minecraft:projectile"
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "nbt": "{Tags:[\"skill_attack\"]}"
+              }
+            }
+          ]
+        }
       }
     ]
   }

@@ -27,7 +27,7 @@
    "minecraft:piglin",
    "minecraft:phantom",
    "minecraft:magma_cube",
-   "iron_golem",
+   "minecraft:iron_golem",
    "minecraft:illusioner",
   "minecraft:husk",
    "minecraft:hoglin",
@@ -44,8 +44,8 @@
    "minecraft:dolphin",
    "minecraft:creeper",
    "minecraft:cave_spider",
-   "breeze",
-   "bogged",
+   "minecraft:breeze",
+   "minecraft:bogged",
    "minecraft:blaze",
    "minecraft:bee"
   ]

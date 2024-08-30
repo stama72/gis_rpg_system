@@ -29,5 +29,5 @@ scoreboard players set @s gis_skill_action_count 0
 
 effect clear @s slowness
 
-item modify entity @s weapon.mainhand gis:to_iron_axe
+item modify entity @s weapon.mainhand gis:to_iron_sword
 item modify entity @s weapon.mainhand gis:convert_to_food_10000s
