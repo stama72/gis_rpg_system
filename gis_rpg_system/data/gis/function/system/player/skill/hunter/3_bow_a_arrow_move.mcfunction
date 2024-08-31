@@ -4,7 +4,6 @@
 
 #プレイヤーのものは吹っ飛ばさない
 execute on origin as @s[type=player] run return 0
-execute on owner as @s[type=player] run return 0
 execute as @s[tag=shot_arrow_skill_3] run return 0
 #一度弾いたものは再度弾かない
 execute as @s[tag=arrow_skill_3_hit_projectile] run return 0

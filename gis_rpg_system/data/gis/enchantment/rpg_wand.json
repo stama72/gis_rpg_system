@@ -30,11 +30,10 @@
           "function": "gis:system/system_trigger/wand/attack"
         },
         "requirements": {
-          "condition": "minecraft:damage_source_properties",
-          "predicate": {
-            "direct_entity": {
-              "type": "minecraft:player"
-            }
+          "condition": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {            
+            "type": "player"
           }
         }
       },
@@ -76,23 +75,21 @@
           "function": "gis:system/system_trigger/wand/projectile_skill"
         },
         "requirements": {
-          "condition": "minecraft:all_of",
-          "terms": [
-            {
               "condition": "minecraft:entity_properties",
               "entity": "direct_attacker",
               "predicate": {
                 "type": "#minecraft:projectile"
               }
-            },
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "attacker",
-              "predicate": {
-                "nbt": "{Tags:[\"skill_attack\"]}"
-              }
-            }
-          ]
+            
+          
+        }
+      }
+    ],
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "gis:system/system_trigger/wand/projectile_hit_block"
         }
       }
     ]

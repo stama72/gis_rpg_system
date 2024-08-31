@@ -1,4 +1,4 @@
-
+#プレイヤーが実行者
 #プレイヤーが矢の位置にTP
 execute at @e[type=arrow,tag=arrow_skill_5_rain_shot,nbt={inGround:true}] run tp @s ~ ~ ~
 execute at @s facing entity @e[type=#enemy,distance=..5,limit=1,sort=nearest] feet run tp @s ~ ~ ~ ~ ~
@@ -13,9 +13,9 @@ execute at @s run particle dust{color:[0.169,0.502,1.000],scale:2} ~ ~0.2 ~ 1 1 
 execute at @s run function gis:system/player/skill/damage_with_physical {enemy:"@e[distance=..3,type=#enemy]",damage:"50"}
 
 #距離計測を使いながら、敵をmotionで吹っ飛ばす
-execute store result score #skill_hunter5_x gis_temp_1 run data get entity @s Pos[0] 1000
-execute store result score #skill_hunter5_y gis_temp_1 run data get entity @s Pos[1] 1000
-execute store result score #skill_hunter5_z gis_temp_1 run data get entity @s Pos[2] 1000
+execute store result score #player_x gis_temp_1 run data get entity @s Pos[0] 1000
+execute store result score #player_y gis_temp_1 run data get entity @s Pos[1] 1000
+execute store result score #player_z gis_temp_1 run data get entity @s Pos[2] 1000
 execute at @s run summon marker ~ ~ ~ {UUID:[I;90,0,1,2]}
 execute at @s as @e[distance=..3,type=#enemy] run function gis:system/player/skill/hunter/5_bow_b_finish_move
 kill 0000005a-0000-0000-0000-000100000002

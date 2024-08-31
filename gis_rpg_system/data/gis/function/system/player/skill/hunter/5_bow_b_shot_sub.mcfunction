@@ -1,4 +1,5 @@
-
+#プレイヤーの放ったオリジナル矢が実行者
+#演出
 execute at @s run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1 1.8
 execute at @s run particle gust ~ ~ ~ 0 0 0 1 1 normal @a
 
@@ -11,11 +12,7 @@ execute store result score #bow_skill_5_y gis_temp_1 run data get entity @s Pos[
 execute store result score #bow_skill_5_z gis_temp_1 run data get entity @s Pos[2] 10000
 execute at @s as @e[distance=..15,type=#enemy,sort=nearest,limit=1] store result score #bow_skill_5_x gis_temp_1 run data get entity @s Pos[0] 10000
 execute at @s as @e[distance=..15,type=#enemy,sort=nearest,limit=1] store result score #bow_skill_5_z gis_temp_1 run data get entity @s Pos[2] 10000
-
-execute store result storage minecraft:gis_temp skill.hunter_5.owner.0 int 1 run data get entity @s Owner[0]
-execute store result storage minecraft:gis_temp skill.hunter_5.owner.1 int 1 run data get entity @s Owner[1]
-execute store result storage minecraft:gis_temp skill.hunter_5.owner.2 int 1 run data get entity @s Owner[2]
-execute store result storage minecraft:gis_temp skill.hunter_5.owner.3 int 1 run data get entity @s Owner[3]
+execute as @s on origin run data modify storage minecraft:gis_temp skill.hunter_5.owner set from entity @s UUID
 execute store result storage minecraft:gis_temp skill.hunter_5.crit int 1 run data get entity @s crit
 
 execute as @e[type=arrow,tag=arrow_skill_5_rain_shot] at @s run function gis:system/player/skill/hunter/5_bow_b_shot_sub2
