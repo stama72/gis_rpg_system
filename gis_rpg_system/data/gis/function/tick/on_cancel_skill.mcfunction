@@ -16,12 +16,13 @@ execute if score @s gis_job matches 1 if score @s gis_skill_using matches 7 run 
 execute if score @s gis_job matches 1 if score @s gis_skill_using matches 8 run function gis:system/player/skill/tank/8_shield_a_cancel
 
 execute if score @s gis_job matches 2 if score @s gis_skill_using matches 5 run function gis:system/player/skill/attacker/5_fist_b_cancel
+execute if score @s gis_job matches 2 if score @s gis_skill_using matches 6 run function gis:system/player/skill/attacker/6_sword_b_finish
 execute if score @s gis_job matches 2 if score @s gis_skill_using matches 10 unless score @s gis_skill_action_count matches 1.. run function gis:system/player/skill/attacker/10_sword_a_cancel
 
 execute if score @s gis_job matches 3 if score @s gis_skill_using matches 4 unless score @s gis_skill_action_count matches 1.. run function gis:system/player/skill/hunter/4_dagger_a_finish
 
 execute if score @s gis_job matches 4 if score @s gis_skill_using matches 4 run function gis:system/player/skill/magician/4_book_a_finish
-execute if score @s gis_job matches 4 if score @s gis_skill_using matches 8 run function gis:system/player/skill/magician/8_book_a_cancel
+execute if score @s gis_job matches 4 if score @s gis_skill_using matches 8 run function gis:system/player/skill/magician/8_book_b_cancel
 
 #コンボ系
 #job 2 skill 3

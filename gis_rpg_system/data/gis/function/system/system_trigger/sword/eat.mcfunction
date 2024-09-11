@@ -12,6 +12,3 @@ execute unless score @s gis_cooltime matches 0 run return 0
 execute if score @s gis_skill_main_2 matches 6 if predicate gis:entity_check/is_sneak run return run function gis:system/player/skill/attacker/6_sword_b
 execute if score @s gis_skill_main_2 matches 8 if predicate gis:entity_check/is_sneak run return run function gis:system/player/skill/attacker/8_sword_b
 execute if score @s gis_skill_main_1 matches 10 run function gis:system/player/skill/attacker/10_sword_a
-
-
-

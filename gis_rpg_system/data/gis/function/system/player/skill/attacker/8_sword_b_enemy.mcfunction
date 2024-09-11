@@ -23,4 +23,3 @@ execute store result score #gis_temp gis_temp_1 run function gis:system/util/col
 execute if score #gis_temp gis_temp_1 matches 0 run return 0
 
 function gis:system/player/skill/damage_with_physical_e {player:"@p[tag=sword_skill_8_player]",damage:"100"}
-
