@@ -4,12 +4,21 @@
     "item": "minecraft:iron_sword",
     "conditions": [
       {
-        "condition": "minecraft:match_tool",
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
         "predicate": {
-          "items": "minecraft:stone_sword",
-          "components": {
-            "minecraft:enchantments": {
-              "gis:rpg_sword": 1
+          "slots": {
+            "weapon.mainhand": {
+              "items": "stone_sword",
+              "count": 1,
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "gis:rpg_sword",
+                    "levels": 1
+                  }
+                ]
+              }
             }
           }
         }

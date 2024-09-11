@@ -4,12 +4,21 @@
       "item": "minecraft:torch",
       "conditions": [
         {
-          "condition": "minecraft:match_tool",
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
           "predicate": {
-            "items": "minecraft:stick",
-            "components": {
-              "minecraft:enchantments": {
-                "gis:rpg_wand": 1
+            "slots": {
+              "weapon.mainhand": {
+                "items": "minecraft:stick",
+                "count": 1,
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "gis:rpg_wand",
+                      "levels": 1
+                    }
+                  ]
+                }
               }
             }
           }

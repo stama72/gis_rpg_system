@@ -4,12 +4,21 @@
       "item": "minecraft:paper",
       "conditions": [
         {
-          "condition": "minecraft:match_tool",
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
           "predicate": {
-            "items": "minecraft:book",
-            "components": {
-              "minecraft:enchantments": {
-                "gis:rpg_book": 1
+            "slots": {
+              "weapon.mainhand": {
+                "items": "book",
+                "count": 1,
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "gis:rpg_book",
+                      "levels": 1
+                    }
+                  ]
+                }
               }
             }
           }

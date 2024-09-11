@@ -4,11 +4,27 @@
     "item": "minecraft:stone_axe",
     "conditions": [
       {
-        "condition": "minecraft:match_tool",
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
         "predicate": {
-          "items": "#minecraft:axes"
+          "slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:iron_axe",
+              "count": 1,
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "gis:rpg_dagger",
+                    "levels": 1
+                  }
+                ]
+              }
+            }
+          }
         }
       }
     ]
   }
 ]
+
+

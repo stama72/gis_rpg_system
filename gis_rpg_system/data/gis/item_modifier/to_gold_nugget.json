@@ -4,12 +4,21 @@
       "item": "minecraft:gold_nugget",
       "conditions": [
         {
-          "condition": "minecraft:match_tool",
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
           "predicate": {
-            "items": "minecraft:iron_nugget",
-            "components": {
-              "minecraft:enchantments": {
-                "gis:rpg_fist": 1
+            "slots": {
+              "weapon.mainhand": {
+                "items": "iron_nugget",
+                "count": 1,
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "gis:rpg_fist",
+                      "levels": 1
+                    }
+                  ]
+                }
               }
             }
           }
