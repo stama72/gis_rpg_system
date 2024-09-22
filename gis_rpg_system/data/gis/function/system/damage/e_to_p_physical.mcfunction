@@ -17,7 +17,7 @@ scoreboard players operation @s gis_health -= @s gis_damage
 #execute if score @s gis_health matches 1.. run function gis:system/damage/entity_hp_set
 
 #hp < 0 death
-execute if score @s gis_health matches ..0 run damage @s 1000 mob_attack by @n[tag=gis_entity_attacker_check]
+execute if score @s gis_health matches ..0 run damage @s 1000 mob_attack by @n[tag=gis_player_attacker_check]
 
 #damage popup
 scoreboard players operation #gis_temp gis_damage = @s gis_damage

@@ -23,6 +23,16 @@ function gis:system/player/skill/damage_with_magic_e {player:"@p[tag=wand_skill_
 function gis:system/player/skill/damage_with_physical_e {player:"@p[tag=sword_skill_1_player]",damage:"30"}
 のようにもできます。
 
+###敵からプレイヤーへのダメージ
+敵を実行者にして、
+function gis:system/player/skill/damage_with_magic {player:"@p[tag=wand_skill_1_player]",damage:"30"}
+function gis:system/player/skill/damage_with_physical {player:"@p[tag=sword_skill_1_player]",damage:"30"}
+
+プレイヤーを実行者にして
+計算にresを使う魔法ダメージなら、function gis:system/entity/skill/damage_with_magic_p {enemy:"@n[type=!player]",damage:"50"}
+計算にdefを使う物理ダメージなら、function gis:system/entity/skill/damage_with_physical_p {enemy:"@n[type=!player]",damage:"50"}
+
+
 ### 殴り系スキル発動時で通常攻撃を取りやめたい時に敵mobに付けるタグ
 tag @s add gis_skill_attacked
 
