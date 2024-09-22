@@ -6,6 +6,11 @@
 #player input
 
 #player_status
+scoreboard objectives add gis_health dummy
+scoreboard objectives add gis_player_health health "player minecraft health"
+scoreboard objectives add gis_max_health dummy "max health"
+scoreboard objectives add gis_player_hp_percent dummy
+
 scoreboard objectives add gis_player_status_atk dummy "attack"
 scoreboard objectives add gis_player_status_def dummy "defense"
 scoreboard objectives add gis_player_status_int dummy "intelligence"
@@ -39,12 +44,11 @@ scoreboard objectives add gis_trident_using_count dummy "time spent holding up a
 scoreboard objectives add gis_trident_using_count_sub dummy "copy of gis_trident_using_count"
 scoreboard objectives add gis_shoot_arrow minecraft.used:minecraft.bow "shoot arrow"
 
-
 #system_global
 scoreboard objectives add gis_damage dummy
-scoreboard objectives add gis_health dummy
 scoreboard objectives add gis_const dummy
 scoreboard objectives add gis_player_leave_game minecraft.custom:minecraft.leave_game
+scoreboard objectives add gis_player_deathcount deathCount "check if player death"
 
 
 #system_temp

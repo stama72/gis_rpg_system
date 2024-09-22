@@ -1,7 +1,6 @@
 #フリーズバースト
 
-execute at @s run playsound minecraft:block.amethyst_block.chime master @a ~ ~ ~ 1 1
-
+execute at @s run playsound minecraft:block.anvil.land master @a ~ ~ ~ 1 1.8
 #ダメージ処理
 #damage=20+溜めtick/2
 function gis:system/player/skill/damage_with_magic_e with storage gis_temp skill.book_4

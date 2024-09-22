@@ -8,7 +8,7 @@ scoreboard players operation @s gis_damage = @s gis_temp_1
 #damage calc
 scoreboard players operation @s gis_damage *= #2 gis_const
 #damage
-execute at @s run function gis:system/entity/entity_player_damage
+execute at @s run function gis:system/damage/p_to_e_physical
 say player book attack
 
 #reset

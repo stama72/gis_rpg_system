@@ -10,7 +10,6 @@
             "slots": {
               "weapon.mainhand": {
                 "items": "minecraft:stick",
-                "count": 1,
                 "predicates": {
                   "minecraft:enchantments": [
                     {

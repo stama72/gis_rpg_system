@@ -1,5 +1,8 @@
 execute unless score @s gis_player_leave_game matches 0 run function gis:tick/on_login
 
+#アクションバー
+#function gis:system/actionbar/set_actionbar_parameter
+
 ##skill
 execute if score @s gis_cooltime matches 1.. run scoreboard players remove @s gis_cooltime 1
 #スキルの詠唱をやめた時を判定

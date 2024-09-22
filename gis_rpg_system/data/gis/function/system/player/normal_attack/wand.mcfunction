@@ -11,7 +11,7 @@ execute if score @p[tag=normal_attack] gis_job matches 4 run scoreboard players 
 execute if score @p[tag=normal_attack] gis_job matches 5 run scoreboard players operation @s gis_damage *= #8 gis_const
 
 #damage
-execute at @s run function gis:system/entity/entity_player_damage
+execute at @s run function gis:system/damage/p_to_e_physical
 say player wand attack
 
 #reset

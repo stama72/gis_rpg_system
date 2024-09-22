@@ -18,14 +18,14 @@ execute if score @s gis_temp_1 matches 1.. run data modify storage gis_temp temp
 execute if score @s gis_temp_1 matches 1.. store result score @s gis_temp_2 run random value 0..10
 
 #slime
-execute if score @s gis_temp_1 matches 1.. if entity @s[type=minecraft:slime] summon minecraft:slime run function gis:system/entity/entity_death_event/death_slime_type_entity_sub
-execute if score @s gis_temp_1 matches 1.. if entity @s[type=minecraft:slime] if score @s gis_temp_2 matches 4.. summon minecraft:slime run function gis:system/entity/entity_death_event/death_slime_type_entity_sub
-execute if score @s gis_temp_1 matches 1.. if entity @s[type=minecraft:slime] if score @s gis_temp_2 matches 8.. summon minecraft:slime run function gis:system/entity/entity_death_event/death_slime_type_entity_sub
+execute if score @s gis_temp_1 matches 1.. if entity @s[type=minecraft:slime] summon minecraft:slime run function gis:system/damage/entity_death_event/death_slime_type_entity_sub
+execute if score @s gis_temp_1 matches 1.. if entity @s[type=minecraft:slime] if score @s gis_temp_2 matches 4.. summon minecraft:slime run function gis:system/damage/entity_death_event/death_slime_type_entity_sub
+execute if score @s gis_temp_1 matches 1.. if entity @s[type=minecraft:slime] if score @s gis_temp_2 matches 8.. summon minecraft:slime run function gis:system/damage/entity_death_event/death_slime_type_entity_sub
 
 #magma_cube
-execute if score @s gis_temp_1 matches 1.. if entity @s[type=minecraft:magma_cube] summon minecraft:magma_cube run function gis:system/entity/entity_death_event/death_slime_type_entity_sub
-execute if score @s gis_temp_1 matches 1.. if entity @s[type=minecraft:magma_cube] if score @s gis_temp_2 matches 4.. summon minecraft:magma_cube run function gis:system/entity/entity_death_event/death_slime_type_entity_sub
-execute if score @s gis_temp_1 matches 1.. if entity @s[type=minecraft:magma_cube] if score @s gis_temp_2 matches 8.. summon minecraft:magma_cube run function gis:system/entity/entity_death_event/death_slime_type_entity_sub
+execute if score @s gis_temp_1 matches 1.. if entity @s[type=minecraft:magma_cube] summon minecraft:magma_cube run function gis:system/damage/entity_death_event/death_slime_type_entity_sub
+execute if score @s gis_temp_1 matches 1.. if entity @s[type=minecraft:magma_cube] if score @s gis_temp_2 matches 4.. summon minecraft:magma_cube run function gis:system/damage/entity_death_event/death_slime_type_entity_sub
+execute if score @s gis_temp_1 matches 1.. if entity @s[type=minecraft:magma_cube] if score @s gis_temp_2 matches 8.. summon minecraft:magma_cube run function gis:system/damage/entity_death_event/death_slime_type_entity_sub
 
 ##if size is 0
 execute if score @s gis_temp_1 matches ..0 run team join gis_entity_hp_0 @s

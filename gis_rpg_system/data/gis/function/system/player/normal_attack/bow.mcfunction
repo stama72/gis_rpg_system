@@ -9,7 +9,7 @@ execute if score @p[tag=normal_attack] gis_job matches 3 run function gis:system
 execute unless score @p[tag=normal_attack] gis_job matches 3 run scoreboard players operation @s gis_damage *= #6 gis_const
 scoreboard players operation @s gis_damage /= #9 gis_const
 #damage
-execute at @s run function gis:system/entity/entity_player_damage
+execute at @s run function gis:system/damage/p_to_e_physical
 execute unless score @p[tag=normal_attack] gis_job matches 3 run say player bow shot hit
 
 #reset

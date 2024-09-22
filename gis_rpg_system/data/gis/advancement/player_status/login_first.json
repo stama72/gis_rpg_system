@@ -1,0 +1,11 @@
+{
+  "parent": "gis:player_status/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "gis:tick/login_first"
+  }
+}

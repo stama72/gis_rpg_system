@@ -1,6 +1,6 @@
 #スキルが使われてなければ素手のnormal attack
 execute if entity @s[tag=!gis_skill_attacked] run scoreboard players operation @s gis_damage = @s gis_temp_1
-execute if entity @s[tag=!gis_skill_attacked] run function gis:system/entity/entity_player_damage
+execute if entity @s[tag=!gis_skill_attacked] run function gis:system/damage/p_to_e_physical
 execute if entity @s[tag=!gis_skill_attacked] run say player undefined attack
 
 #reset

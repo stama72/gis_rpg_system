@@ -10,7 +10,6 @@
           "slots": {
             "weapon.mainhand": {
               "items": "gold_nugget",
-              "count": 1,
               "predicates": {
                 "minecraft:enchantments": [
                   {
