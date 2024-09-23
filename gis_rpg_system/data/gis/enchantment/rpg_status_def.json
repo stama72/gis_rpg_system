@@ -22,7 +22,8 @@
   },
   "anvil_cost": 0,
   "slots": [
-    "head"
+    "head",
+    "mainhand"
   ],
   "effects": {
     "minecraft:post_attack": [

@@ -42,7 +42,7 @@ scoreboard players operation #defence gis_temp_1 += #100 gis_const
 
 scoreboard players operation #attack gis_temp_1 /= #defence gis_temp_1
 
-scoreboard players operation #attack gis_temp_1 /= #1000 gis_const
+#scoreboard players operation #attack gis_temp_1 /= #1000 gis_const
 
 scoreboard players operation #attack gis_temp_1 > #1 gis_const
 
