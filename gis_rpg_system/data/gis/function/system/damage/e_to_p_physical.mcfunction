@@ -16,7 +16,7 @@ scoreboard players operation @s gis_health -= @s gis_damage
 #execute if score @s gis_health matches 1.. run function gis:system/damage/entity_hp_set
 
 #hp < 0 death
-execute if score @s gis_health matches ..0 run damage @s 1000 mob_attack by @n[tag=gis_player_attacker_check]
+execute if score @s gis_health matches ..0 run damage @s 1000 generic by @n[tag=gis_player_attacker_check]
 execute if score @s gis_health matches 1.. run tellraw @a [{"text":"HP：","color": "red"},{"color":"green","score":{"name":"@s","objective":"gis_health"}},{"color":"white","text":"/"},{"color":"red","score":{"name":"@s","objective":"gis_max_health"}}]
 
 #damage popup

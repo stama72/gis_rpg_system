@@ -56,22 +56,6 @@
             "type": "minecraft:player"
           }
         }
-      },
-      {
-        "enchanted": "attacker",
-        "affected": "victim",
-        "effect": {
-          "type": "minecraft:run_function",
-          "function": "gis:system/entity/entity_attack_player/victim_player"
-        }
-      },      
-      {
-        "enchanted": "attacker",
-        "affected": "attacker",
-        "effect": {
-          "type": "minecraft:run_function",
-          "function": "gis:system/entity/entity_attack_player/attacker_entity"
-        }
       }
     ]
   }

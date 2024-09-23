@@ -1,0 +1,49 @@
+{
+  "description": "",
+  "supported_items": [
+    "minecraft:stone_button",
+    "barrier",
+    "wooden_sword",
+    "stone_sword",
+    "iron_sword",
+    "diamond_sword",
+    "netherite_sword",
+    "bow",
+    "trident"
+  ],
+  "weight": 1,
+  "max_level": 255,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "offhand",
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "gis:system/entity/entity_attack_player/victim_player"
+        }
+      },      
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "gis:system/entity/entity_attack_player/attacker_entity"
+        }
+      }
+    ]
+  }
+}

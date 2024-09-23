@@ -10,4 +10,4 @@ say enemy magic attack
 
 #reset
 tag @p[tag=gis_entity_defenser_check] remove gis_entity_defenser_check
-tag @s remove gis_entity_attacker_check
+tag @s remove gis_player_attacker_check
