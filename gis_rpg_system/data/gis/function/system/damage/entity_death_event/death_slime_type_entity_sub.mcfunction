@@ -6,8 +6,8 @@ data modify entity @s Tags set from storage gis_temp temp_1.Tags
 data modify entity @s Size set from storage gis_temp temp_1.Size
 
 #set data
-attribute @s minecraft:generic.max_health base set 1024
-attribute @s minecraft:generic.armor base set 0
+attribute @s max_health base set 1024
+attribute @s armor base set 0
 data modify entity @s Health set value 1024.0f
 data modify entity @s CustomNameVisible set value 1b
 team join gis_entity_hp_20 @s

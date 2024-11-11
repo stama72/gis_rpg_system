@@ -18,7 +18,7 @@ execute store result entity @s Motion[2] double 0.00003 run data get entity @s M
 
 
 #演出要素としてファントムを乗せる
-execute at @s run summon phantom ~ ~ ~ {Fire:10000,Silent:1b,NoAI:1b,Size:0,Tags:["no_mob_convert","ride_up_display"],attributes:[{id:"minecraft:generic.scale",base:0.8}],active_effects:[{id:"minecraft:resistance",amplifier:5,duration:10000,show_particles:0b},{id:"minecraft:fire_resistance",amplifier:1,duration:10000,show_particles:0b}]}
+execute at @s run summon phantom ~ ~ ~ {Fire:10000,Silent:1b,NoAI:1b,Size:0,Tags:["no_mob_convert","ride_up_display"],attributes:[{id:"scale",base:0.8}],active_effects:[{id:"minecraft:resistance",amplifier:5,duration:10000,show_particles:0b},{id:"minecraft:fire_resistance",amplifier:1,duration:10000,show_particles:0b}]}
 
 execute at @s on origin rotated as @s as @n[type=phantom,tag=ride_up_display] run teleport @s ~ ~ ~ ~ ~
 

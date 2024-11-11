@@ -6,7 +6,7 @@
           "modifiers": [
             {
               "id": "attack_damage_0",
-              "type": "minecraft:generic.attack_damage",
+              "type": "attack_damage",
               "amount": 0,
               "operation": "add_value",
               "slot": "any"

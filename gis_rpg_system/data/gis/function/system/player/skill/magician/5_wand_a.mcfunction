@@ -14,7 +14,7 @@ execute at 0000005a-0000-0000-0000-000100000002 as @e[type=#enemy,distance=..15]
 execute at 0000005a-0000-0000-0000-000100000002 facing entity @n[tag=wand_skill_5_enemy] eyes run tp 0000005a-0000-0000-0000-000100000002 ~ ~ ~ ~ ~
 
 #ウィンドチャージ召喚
-execute at @s positioned ~ ~1 ~ rotated as 0000005a-0000-0000-0000-000100000002 run summon wind_charge ^ ^ ^1 {Silent:1b,Invulnerable:1b,PortalCooldown:300,DeathLootTable:"minecraft:empty",NoAI:1b,Tags:["no_mob_convert","gis_kill","gis_kill_pause","wind_magician_skill_5"],CustomName:'"ウィンドエッジ"',active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:1000,show_particles:0b}],attributes:[{id:"minecraft:generic.scale",base:1}]}
+execute at @s positioned ~ ~1 ~ rotated as 0000005a-0000-0000-0000-000100000002 run summon wind_charge ^ ^ ^1 {Silent:1b,Invulnerable:1b,PortalCooldown:300,DeathLootTable:"minecraft:empty",NoAI:1b,Tags:["no_mob_convert","gis_kill","gis_kill_pause","wind_magician_skill_5"],CustomName:'"ウィンドエッジ"',active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:1000,show_particles:0b}],attributes:[{id:"scale",base:1}]}
 #オーナー指定
 data modify entity @n[tag=wind_magician_skill_5] Owner set from entity @s UUID
 
