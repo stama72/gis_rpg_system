@@ -1,14 +1,15 @@
 [
-    {
-      "function": "minecraft:set_components",
-      "components": {
-        "minecraft:food": {
-          "nutrition": 0,
-          "saturation": 0,
-          "can_always_eat": true,
-          "eat_seconds": 10000
-        }
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:consumable": {
+        "consume_seconds": 10000,
+        "animation": "spear",
+        "sound": {
+          "sound_id": "none"
+        },
+        "has_consume_particles": false
       }
     }
-  ]
-  
+  }
+]
