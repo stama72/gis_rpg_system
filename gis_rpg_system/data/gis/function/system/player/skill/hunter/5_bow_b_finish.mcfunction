@@ -2,9 +2,12 @@
 
 #プレイヤーが矢の位置にTP
 #頭の位置にブロックがあったら矢の位置へのTPは取りやめ、矢の方向へ0.1マスTP
-execute at @n[type=arrow,tag=arrow_skill_5_rain_shot,nbt={inGround:true}] if block ~ ~ ~ #air if block ~ ~1 ~ #air run tag @s add arrow_skill_5_player_tp
-execute if entity @s[tag=arrow_skill_5_player_tp] run execute at @e[type=arrow,tag=arrow_skill_5_rain_shot,nbt={inGround:true}] facing entity @e[type=#enemy,distance=..5,limit=1,sort=nearest] feet run tp @s ~ ~ ~ ~ ~
+execute at @n[type=arrow,tag=arrow_skill_5_rain_shot,nbt={inGround:true}] if block ~ ~1.3 ~ #air run tag @s add arrow_skill_5_player_tp
+execute if entity @s[tag=arrow_skill_5_player_tp] at @e[type=arrow,tag=arrow_skill_5_rain_shot,nbt={inGround:true}] run tp @s ~ ~ ~
+execute if entity @s[tag=arrow_skill_5_player_tp] at @s facing entity @e[type=#enemy,distance=..5,limit=1,sort=nearest] feet run tp @s ~ ~ ~ ~ ~
+
 execute unless entity @s[tag=arrow_skill_5_player_tp] facing entity @n[type=arrow,tag=arrow_skill_5_rain_shot,nbt={inGround:true}] feet run teleport @s ^ ^ ^0.1 ~ ~
+
 execute at @s run playsound minecraft:entity.player.teleport master @a ~ ~ ~ 0.5 1
 tag @s remove arrow_skill_5_player_tp
 

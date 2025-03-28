@@ -12,7 +12,7 @@
     "minecraft:snowball",
     "minecraft:small_fireball",
     "minecraft:shulker_bullet",
-    "minecraft:potion",
+    "minecraft:splash_potion",
     "minecraft:painting",
     "minecraft:minecart",
     "minecraft:marker",
@@ -43,7 +43,7 @@
     "minecraft:breeze_wind_charge",
     "wind_charge",
     "#boat",
-    "minecraft:arrow",
+    "#arrows",
     "minecraft:armor_stand",
     "minecraft:area_effect_cloud"
   ]
